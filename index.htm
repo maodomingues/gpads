@@ -1,0 +1,4661 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GPADS</title>
+	<link rel="stylesheet" id="astra-theme-css-css" href="GPADS_arquivos/style.min_002.css" media="all">
+	<style id="astra-theme-css-inline-css">
+		html {
+			font-size: 100%;
+		}
+
+		a,
+		.page-title {
+			color: #000000;
+		}
+
+		a:hover,
+		a:focus {
+			color: #00ab4f;
+		}
+
+		body,
+		button,
+		input,
+		select,
+		textarea {
+			font-family: Arial, Helvetica, Verdana, sans-serif;
+			font-weight: 400;
+			font-size: 16px;
+			font-size: 1rem;
+		}
+
+		blockquote {
+			color: #000000;
+		}
+
+		h1,
+		.entry-content h1,
+		h2,
+		.entry-content h2,
+		h3,
+		.entry-content h3,
+		h4,
+		.entry-content h4,
+		h5,
+		.entry-content h5,
+		h6,
+		.entry-content h6,
+		.site-title,
+		.site-title a {
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 700;
+		}
+
+		.site-title {
+			font-size: 35px;
+			font-size: 2.1875rem;
+		}
+
+		header .site-logo-img .custom-logo-link img {
+			max-width: 42px;
+		}
+
+		.astra-logo-svg {
+			width: 42px;
+		}
+
+		.ast-archive-description .ast-archive-title {
+			font-size: 40px;
+			font-size: 2.5rem;
+		}
+
+		.site-header .site-description {
+			font-size: 15px;
+			font-size: 0.9375rem;
+		}
+
+		.entry-title {
+			font-size: 40px;
+			font-size: 2.5rem;
+		}
+
+		.comment-reply-title {
+			font-size: 26px;
+			font-size: 1.625rem;
+		}
+
+		.ast-comment-list #cancel-comment-reply-link {
+			font-size: 16px;
+			font-size: 1rem;
+		}
+
+		h1,
+		.entry-content h1 {
+			font-size: 40px;
+			font-size: 2.5rem;
+		}
+
+		h2,
+		.entry-content h2 {
+			font-size: 30px;
+			font-size: 1.875rem;
+		}
+
+		h3,
+		.entry-content h3 {
+			font-size: 25px;
+			font-size: 1.5625rem;
+		}
+
+		h4,
+		.entry-content h4 {
+			font-size: 20px;
+			font-size: 1.25rem;
+		}
+
+		h5,
+		.entry-content h5 {
+			font-size: 18px;
+			font-size: 1.125rem;
+		}
+
+		h6,
+		.entry-content h6 {
+			font-size: 15px;
+			font-size: 0.9375rem;
+		}
+
+		.ast-single-post .entry-title,
+		.page-title {
+			font-size: 30px;
+			font-size: 1.875rem;
+		}
+
+		#secondary,
+		#secondary button,
+		#secondary input,
+		#secondary select,
+		#secondary textarea {
+			font-size: 16px;
+			font-size: 1rem;
+		}
+
+		::selection {
+			background-color: #000000;
+			color: #ffffff;
+		}
+
+		body,
+		h1,
+		.entry-title a,
+		.entry-content h1,
+		h2,
+		.entry-content h2,
+		h3,
+		.entry-content h3,
+		h4,
+		.entry-content h4,
+		h5,
+		.entry-content h5,
+		h6,
+		.entry-content h6,
+		.wc-block-grid__product-title {
+			color: #000000;
+		}
+
+		.tagcloud a:hover,
+		.tagcloud a:focus,
+		.tagcloud a.current-item {
+			color: #ffffff;
+			border-color: #000000;
+			background-color: #000000;
+		}
+
+		.main-header-menu a,
+		.ast-header-custom-item a {
+			color: #000000;
+		}
+
+		.main-header-menu li:hover>a,
+		.main-header-menu li:hover>.ast-menu-toggle,
+		.main-header-menu .ast-masthead-custom-menu-items a:hover,
+		.main-header-menu li.focus>a,
+		.main-header-menu li.focus>.ast-menu-toggle,
+		.main-header-menu .current-menu-item>a,
+		.main-header-menu .current-menu-ancestor>a,
+		.main-header-menu .current_page_item>a,
+		.main-header-menu .current-menu-item>.ast-menu-toggle,
+		.main-header-menu .current-menu-ancestor>.ast-menu-toggle,
+		.main-header-menu .current_page_item>.ast-menu-toggle {
+			color: #000000;
+		}
+
+		input:focus,
+		input[type="text"]:focus,
+		input[type="email"]:focus,
+		input[type="url"]:focus,
+		input[type="password"]:focus,
+		input[type="reset"]:focus,
+		input[type="search"]:focus,
+		textarea:focus {
+			border-color: #000000;
+		}
+
+		input[type="radio"]:checked,
+		input[type=reset],
+		input[type="checkbox"]:checked,
+		input[type="checkbox"]:hover:checked,
+		input[type="checkbox"]:focus:checked,
+		input[type=range]::-webkit-slider-thumb {
+			border-color: #000000;
+			background-color: #000000;
+			box-shadow: none;
+		}
+
+		.site-footer a:hover+.post-count,
+		.site-footer a:focus+.post-count {
+			background: #000000;
+			border-color: #000000;
+		}
+
+		.ast-small-footer {
+			color: #000000;
+		}
+
+		.ast-small-footer>.ast-footer-overlay {
+			background-color: #ffffff;
+		}
+
+		.ast-small-footer a {
+			color: #1b676b;
+		}
+
+		.ast-small-footer a:hover {
+			color: #007bff;
+		}
+
+		.footer-adv .footer-adv-overlay {
+			border-top-style: solid;
+			border-top-width: 0;
+			border-top-color: #7a7a7a;
+		}
+
+		.ast-comment-meta {
+			line-height: 1.666666667;
+			font-size: 13px;
+			font-size: 0.8125rem;
+		}
+
+		.single .nav-links .nav-previous,
+		.single .nav-links .nav-next,
+		.single .ast-author-details .author-title,
+		.ast-comment-meta {
+			color: #000000;
+		}
+
+		.menu-toggle,
+		button,
+		.ast-button,
+		.button,
+		input#submit,
+		input[type="button"],
+		input[type="submit"],
+		input[type="reset"] {
+			border-radius: 2px;
+			padding: 10px 40px;
+			color: #ffffff;
+			border-color: #000000;
+			background-color: #000000;
+		}
+
+		button:focus,
+		.menu-toggle:hover,
+		button:hover,
+		.ast-button:hover,
+		.button:hover,
+		input[type=reset]:hover,
+		input[type=reset]:focus,
+		input#submit:hover,
+		input#submit:focus,
+		input[type="button"]:hover,
+		input[type="button"]:focus,
+		input[type="submit"]:hover,
+		input[type="submit"]:focus {
+			color: #ffffff;
+			border-color: #00ab4f;
+			background-color: #00ab4f;
+		}
+
+		.entry-meta,
+		.entry-meta * {
+			line-height: 1.45;
+			color: #000000;
+		}
+
+		.entry-meta a:hover,
+		.entry-meta a:hover *,
+		.entry-meta a:focus,
+		.entry-meta a:focus * {
+			color: #00ab4f;
+		}
+
+		.ast-404-layout-1 .ast-404-text {
+			font-size: 200px;
+			font-size: 12.5rem;
+		}
+
+		.widget-title {
+			font-size: 22px;
+			font-size: 1.375rem;
+			color: #000000;
+		}
+
+		#cat option,
+		.secondary .calendar_wrap thead a,
+		.secondary .calendar_wrap thead a:visited {
+			color: #000000;
+		}
+
+		.secondary .calendar_wrap #today,
+		.ast-progress-val span {
+			background: #000000;
+		}
+
+		.secondary a:hover+.post-count,
+		.secondary a:focus+.post-count {
+			background: #000000;
+			border-color: #000000;
+		}
+
+		.calendar_wrap #today>a {
+			color: #ffffff;
+		}
+
+		.ast-pagination a,
+		.page-links .page-link,
+		.single .post-navigation a {
+			color: #000000;
+		}
+
+		.ast-pagination a:hover,
+		.ast-pagination a:focus,
+		.ast-pagination>span:hover:not(.dots),
+		.ast-pagination>span.current,
+		.page-links>.page-link,
+		.page-links .page-link:hover,
+		.post-navigation a:hover {
+			color: #00ab4f;
+		}
+
+		.ast-header-break-point .ast-mobile-menu-buttons-minimal.menu-toggle {
+			background: transparent;
+			color: #000000;
+		}
+
+		.ast-header-break-point .ast-mobile-menu-buttons-outline.menu-toggle {
+			background: transparent;
+			border: 1px solid #000000;
+			color: #000000;
+		}
+
+		.ast-header-break-point .ast-mobile-menu-buttons-fill.menu-toggle {
+			background: #000000;
+		}
+
+		@media (min-width:545px) {
+
+			.ast-page-builder-template .comments-area,
+			.single.ast-page-builder-template .entry-header,
+			.single.ast-page-builder-template .post-navigation {
+				max-width: 1240px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+		@media (max-width:768px) {
+			.ast-archive-description .ast-archive-title {
+				font-size: 40px;
+			}
+
+			.entry-title {
+				font-size: 30px;
+			}
+
+			h1,
+			.entry-content h1 {
+				font-size: 30px;
+			}
+
+			h2,
+			.entry-content h2 {
+				font-size: 25px;
+			}
+
+			h3,
+			.entry-content h3 {
+				font-size: 20px;
+			}
+
+			.ast-single-post .entry-title,
+			.page-title {
+				font-size: 30px;
+			}
+		}
+
+		@media (max-width:544px) {
+			.ast-archive-description .ast-archive-title {
+				font-size: 40px;
+			}
+
+			.entry-title {
+				font-size: 30px;
+			}
+
+			h1,
+			.entry-content h1 {
+				font-size: 30px;
+			}
+
+			h2,
+			.entry-content h2 {
+				font-size: 25px;
+			}
+
+			h3,
+			.entry-content h3 {
+				font-size: 20px;
+			}
+
+			.ast-single-post .entry-title,
+			.page-title {
+				font-size: 30px;
+			}
+		}
+
+		@media (max-width:768px) {
+			html {
+				font-size: 91.2%;
+			}
+		}
+
+		@media (max-width:544px) {
+			html {
+				font-size: 91.2%;
+			}
+		}
+
+		@media (min-width:769px) {
+			.ast-container {
+				max-width: 1240px;
+			}
+		}
+
+		/* @font-face {
+			font-family: "Astra";
+			src: url(https://web.archive.org/web/20230214165204im_/http://gpads.recife.ifpe.edu.br/wp-content/themes/astra/assets/fonts/astra.woff) format("woff"), url(https://web.archive.org/web/20230214165204im_/http://gpads.recife.ifpe.edu.br/wp-content/themes/astra/assets/fonts/astra.ttf) format("truetype"), url(https://web.archive.org/web/20230214165204im_/http://gpads.recife.ifpe.edu.br/wp-content/themes/astra/assets/fonts/astra.svg#astra) format("svg");
+			font-weight: normal;
+			font-style: normal;
+			font-display: fallback;
+		} */
+
+		@media (max-width:921px) {
+			.main-header-bar .main-header-bar-navigation {
+				display: none;
+			}
+		}
+
+		.ast-desktop .main-header-menu.submenu-with-border .sub-menu,
+		.ast-desktop .main-header-menu.submenu-with-border .children,
+		.ast-desktop .main-header-menu.submenu-with-border .astra-full-megamenu-wrapper {
+			border-color: #000000;
+		}
+
+		.ast-desktop .main-header-menu.submenu-with-border .sub-menu,
+		.ast-desktop .main-header-menu.submenu-with-border .children {
+			border-top-width: 2px;
+			border-right-width: 0px;
+			border-left-width: 0px;
+			border-bottom-width: 0px;
+			border-style: solid;
+		}
+
+		.ast-desktop .main-header-menu.submenu-with-border .sub-menu .sub-menu,
+		.ast-desktop .main-header-menu.submenu-with-border .children .children {
+			top: -2px;
+		}
+
+		.ast-desktop .main-header-menu.submenu-with-border .sub-menu a,
+		.ast-desktop .main-header-menu.submenu-with-border .children a {
+			border-bottom-width: 0px;
+			border-style: solid;
+			border-color: #eaeaea;
+		}
+
+		@media (min-width:769px) {
+
+			.main-header-menu .sub-menu li.ast-left-align-sub-menu:hover>ul,
+			.main-header-menu .sub-menu li.ast-left-align-sub-menu.focus>ul {
+				margin-left: -0px;
+			}
+		}
+
+		.ast-small-footer {
+			border-top-style: solid;
+			border-top-width: 0;
+			border-top-color: #7a7a7a;
+		}
+
+		.ast-small-footer-wrap {
+			text-align: center;
+		}
+
+		@media (max-width:920px) {
+			.ast-404-layout-1 .ast-404-text {
+				font-size: 100px;
+				font-size: 6.25rem;
+			}
+		}
+
+		#masthead .ast-container,
+		.ast-header-breadcrumb .ast-container {
+			max-width: 100%;
+			padding-left: 35px;
+			padding-right: 35px;
+		}
+
+		@media (max-width:921px) {
+
+			#masthead .ast-container,
+			.ast-header-breadcrumb .ast-container {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
+
+		#masthead .ast-container,
+		.ast-header-breadcrumb .ast-container {
+			max-width: 100%;
+			padding-left: 35px;
+			padding-right: 35px;
+		}
+
+		@media (max-width:921px) {
+
+			#masthead .ast-container,
+			.ast-header-breadcrumb .ast-container {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
+
+		@media (min-width:769px) {
+			.ast-theme-transparent-header #masthead {
+				position: absolute;
+				left: 0;
+				right: 0;
+			}
+
+			.ast-theme-transparent-header .main-header-bar,
+			.ast-theme-transparent-header.ast-header-break-point .main-header-bar {
+				background: none;
+			}
+
+			body.elementor-editor-active.ast-theme-transparent-header #masthead,
+			.fl-builder-edit .ast-theme-transparent-header #masthead,
+			body.vc_editor.ast-theme-transparent-header #masthead {
+				z-index: 0;
+			}
+
+			.ast-header-break-point.ast-replace-site-logo-transparent.ast-theme-transparent-header .custom-mobile-logo-link {
+				display: none;
+			}
+
+			.ast-header-break-point.ast-replace-site-logo-transparent.ast-theme-transparent-header .transparent-custom-logo {
+				display: inline-block;
+			}
+
+			.ast-theme-transparent-header .ast-above-header {
+				background-image: none;
+				background-color: transparent;
+			}
+
+			.ast-theme-transparent-header .ast-below-header {
+				background-image: none;
+				background-color: transparent;
+			}
+		}
+
+		.ast-theme-transparent-header .main-header-bar,
+		.ast-theme-transparent-header.ast-header-break-point .main-header-bar-wrap .main-header-menu,
+		.ast-theme-transparent-header.ast-header-break-point .main-header-bar-wrap .main-header-bar {
+			background-color: #17333f;
+		}
+
+		.ast-theme-transparent-header .main-header-bar .ast-search-menu-icon form {
+			background-color: #17333f;
+		}
+
+		.ast-theme-transparent-header .ast-above-header,
+		.ast-theme-transparent-header .ast-below-header,
+		.ast-header-break-point.ast-theme-transparent-header .ast-above-header,
+		.ast-header-break-point.ast-theme-transparent-header .ast-below-header {
+			background-color: #17333f;
+		}
+
+		.ast-theme-transparent-header .site-title a,
+		.ast-theme-transparent-header .site-title a:focus,
+		.ast-theme-transparent-header .site-title a:hover,
+		.ast-theme-transparent-header .site-title a:visited {
+			color: #ffffff;
+		}
+
+		.ast-theme-transparent-header .site-header .site-description {
+			color: #ffffff;
+		}
+
+		.ast-theme-transparent-header .main-header-menu,
+		.ast-theme-transparent-header .main-header-menu a,
+		.ast-theme-transparent-header .ast-masthead-custom-menu-items,
+		.ast-theme-transparent-header .ast-masthead-custom-menu-items a,
+		.ast-theme-transparent-header .main-header-menu li>.ast-menu-toggle,
+		.ast-theme-transparent-header .main-header-menu li>.ast-menu-toggle {
+			color: #ffffff;
+		}
+
+		.ast-theme-transparent-header .main-header-menu li:hover>a,
+		.ast-theme-transparent-header .main-header-menu li:hover>.ast-menu-toggle,
+		.ast-theme-transparent-header .main-header-menu .ast-masthead-custom-menu-items a:hover,
+		.ast-theme-transparent-header .main-header-menu .focus>a,
+		.ast-theme-transparent-header .main-header-menu .focus>.ast-menu-toggle,
+		.ast-theme-transparent-header .main-header-menu .current-menu-item>a,
+		.ast-theme-transparent-header .main-header-menu .current-menu-ancestor>a,
+		.ast-theme-transparent-header .main-header-menu .current_page_item>a,
+		.ast-theme-transparent-header .main-header-menu .current-menu-item>.ast-menu-toggle,
+		.ast-theme-transparent-header .main-header-menu .current-menu-ancestor>.ast-menu-toggle,
+		.ast-theme-transparent-header .main-header-menu .current_page_item>.ast-menu-toggle {
+			color: #00ab4f;
+		}
+
+		@media (max-width:768px) {
+			.ast-theme-transparent-header #masthead {
+				position: absolute;
+				left: 0;
+				right: 0;
+			}
+
+			.ast-theme-transparent-header .main-header-bar,
+			.ast-theme-transparent-header.ast-header-break-point .main-header-bar {
+				background: none;
+			}
+
+			body.elementor-editor-active.ast-theme-transparent-header #masthead,
+			.fl-builder-edit .ast-theme-transparent-header #masthead,
+			body.vc_editor.ast-theme-transparent-header #masthead {
+				z-index: 0;
+			}
+
+			.ast-header-break-point.ast-replace-site-logo-transparent.ast-theme-transparent-header .custom-mobile-logo-link {
+				display: none;
+			}
+
+			.ast-header-break-point.ast-replace-site-logo-transparent.ast-theme-transparent-header .transparent-custom-logo {
+				display: inline-block;
+			}
+
+			.ast-theme-transparent-header .ast-above-header {
+				background-image: none;
+				background-color: transparent;
+			}
+
+			.ast-theme-transparent-header .ast-below-header {
+				background-image: none;
+				background-color: transparent;
+			}
+		}
+
+		@media (max-width:768px) {
+
+			.ast-theme-transparent-header .main-header-bar,
+			.ast-theme-transparent-header.ast-header-break-point .main-header-bar-wrap .main-header-menu,
+			.ast-theme-transparent-header.ast-header-break-point .main-header-bar-wrap .main-header-bar {
+				background-color: #17333f;
+			}
+
+			.ast-theme-transparent-header .main-header-bar .ast-search-menu-icon form {
+				background-color: #17333f;
+			}
+
+			.ast-theme-transparent-header .ast-above-header,
+			.ast-theme-transparent-header .ast-below-header,
+			.ast-header-break-point.ast-theme-transparent-header .ast-above-header,
+			.ast-header-break-point.ast-theme-transparent-header .ast-below-header {
+				background-color: #17333f;
+			}
+		}
+
+		@media (max-width:544px) {
+
+			.ast-theme-transparent-header .main-header-bar,
+			.ast-theme-transparent-header.ast-header-break-point .main-header-bar-wrap .main-header-menu,
+			.ast-theme-transparent-header.ast-header-break-point .main-header-bar-wrap .main-header-bar {
+				background-color: #17333f;
+			}
+
+			.ast-theme-transparent-header .main-header-bar .ast-search-menu-icon form {
+				background-color: #17333f;
+			}
+
+			.ast-theme-transparent-header .ast-above-header,
+			.ast-theme-transparent-header .ast-below-header,
+			.ast-header-break-point.ast-theme-transparent-header .ast-above-header,
+			.ast-header-break-point.ast-theme-transparent-header .ast-below-header {
+				background-color: #17333f;
+			}
+		}
+
+		.ast-theme-transparent-header .main-header-bar,
+		.ast-theme-transparent-header .site-header {
+			border-bottom-width: 0;
+		}
+
+		.ast-breadcrumbs .trail-browse,
+		.ast-breadcrumbs .trail-items,
+		.ast-breadcrumbs .trail-items li {
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+			border: none;
+			background: inherit;
+			text-indent: 0;
+		}
+
+		.ast-breadcrumbs .trail-browse {
+			font-size: inherit;
+			font-style: inherit;
+			font-weight: inherit;
+			color: inherit;
+		}
+
+		.ast-breadcrumbs .trail-items {
+			list-style: none;
+		}
+
+		.trail-items li::after {
+			padding: 0 0.3em;
+			content: "»";
+		}
+
+		.trail-items li:last-of-type::after {
+			display: none;
+		}
+
+		.ast-header-break-point .site-header {
+			border-bottom-width: 0;
+		}
+
+		@media (min-width:769px) {
+			.main-header-bar {
+				border-bottom-width: 0;
+			}
+		}
+
+		.ast-safari-browser-less-than-11 .main-header-menu .menu-item,
+		.ast-safari-browser-less-than-11 .main-header-bar .ast-masthead-custom-menu-items {
+			display: block;
+		}
+
+		.main-header-menu .menu-item,
+		.main-header-bar .ast-masthead-custom-menu-items {
+			-js-display: flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-webkit-justify-content: center;
+			-moz-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-webkit-flex-direction: column;
+			-moz-box-orient: vertical;
+			-moz-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+		}
+
+		.main-header-menu>.menu-item>a {
+			height: 100%;
+			-webkit-box-align: center;
+			-webkit-align-items: center;
+			-moz-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			-js-display: flex;
+			display: flex;
+		}
+
+		.ast-primary-menu-disabled .main-header-bar .ast-masthead-custom-menu-items {
+			flex: unset;
+		}
+	</style>
+	<link rel="stylesheet" id="uagb-block-css-css" href="GPADS_arquivos/blocks.style.css" media="all">
+	<link rel="stylesheet" id="popup-maker-site-css" href="GPADS_arquivos/site.min.css" media="all">
+	<style id="popup-maker-site-inline-css">
+		/* Popup Google Fonts */
+		@import url('//web.archive.org/web/20230214165204cs_/http://fonts.googleapis.com/css?family=Montserrat:100');
+
+		/* Popup Theme 283: Tema Projetos */
+		.pum-theme-283,
+		.pum-theme-283 {
+			background-color: rgba(0, 0, 0, 0.50)
+		}
+
+		.pum-theme-283 .pum-container,
+		.pum-theme-283 .pum-container {
+			padding: 40px;
+			border-radius: 10px;
+			border: 1px none #000000;
+			box-shadow: 1px 1px 3px 0px rgba(2, 2, 2, 0.23);
+			background-color: rgba(249, 249, 249, 1.00)
+		}
+
+		.pum-theme-283 .pum-title,
+		.pum-theme-283 .pum-title {
+			color: #000000;
+			text-align: center;
+			text-shadow: 0px 0px 0px rgba(2, 2, 2, 0.23);
+			font-family: inherit;
+			font-weight: 400;
+			font-size: 32px;
+			line-height: 36px
+		}
+
+		.pum-theme-283 .pum-content,
+		.pum-theme-283 .pum-content {
+			color: #000000;
+			font-family: inherit;
+			font-weight: 400
+		}
+
+		.pum-theme-283 .pum-content+.pum-close,
+		.pum-theme-283 .pum-content+.pum-close {
+			position: absolute;
+			height: auto;
+			width: auto;
+			left: auto;
+			right: 30px;
+			bottom: auto;
+			top: 15px;
+			padding: 0px;
+			color: #000000;
+			font-family: inherit;
+			font-weight: 400;
+			font-size: 25px;
+			line-height: 36px;
+			border: 1px none #ffffff;
+			border-radius: 0px;
+			box-shadow: 1px 1px 3px 0px rgba(2, 2, 2, 0.00);
+			text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.00);
+			background-color: rgba(0, 183, 205, 0.00)
+		}
+
+		/* Popup Theme 267: Hello Box */
+		.pum-theme-267,
+		.pum-theme-hello-box {
+			background-color: rgba(0, 0, 0, 0.75)
+		}
+
+		.pum-theme-267 .pum-container,
+		.pum-theme-hello-box .pum-container {
+			padding: 30px;
+			border-radius: 80px;
+			border: 14px solid #81d742;
+			box-shadow: 0px 0px 0px 0px rgba(2, 2, 2, 0.00);
+			background-color: rgba(255, 255, 255, 1.00)
+		}
+
+		.pum-theme-267 .pum-title,
+		.pum-theme-hello-box .pum-title {
+			color: #2d2d2d;
+			text-align: left;
+			text-shadow: 0px 0px 0px rgba(2, 2, 2, 0.23);
+			font-family: Montserrat;
+			font-weight: 100;
+			font-size: 32px;
+			line-height: 36px
+		}
+
+		.pum-theme-267 .pum-content,
+		.pum-theme-hello-box .pum-content {
+			color: #2d2d2d;
+			font-family: inherit;
+			font-weight: 100
+		}
+
+		.pum-theme-267 .pum-content+.pum-close,
+		.pum-theme-hello-box .pum-content+.pum-close {
+			position: absolute;
+			height: auto;
+			width: auto;
+			left: auto;
+			right: -30px;
+			bottom: auto;
+			top: -30px;
+			padding: 0px;
+			color: #2d2d2d;
+			font-family: Times New Roman;
+			font-weight: 100;
+			font-size: 32px;
+			line-height: 28px;
+			border: 1px none #ffffff;
+			border-radius: 28px;
+			box-shadow: 0px 0px 0px 0px rgba(2, 2, 2, 0.23);
+			text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.23);
+			background-color: rgba(255, 255, 255, 1.00)
+		}
+
+		/* Popup Theme 268: Cutting Edge */
+		.pum-theme-268,
+		.pum-theme-cutting-edge {
+			background-color: rgba(0, 0, 0, 0.50)
+		}
+
+		.pum-theme-268 .pum-container,
+		.pum-theme-cutting-edge .pum-container {
+			padding: 18px;
+			border-radius: 0px;
+			border: 1px none #000000;
+			box-shadow: 0px 10px 25px 0px rgba(2, 2, 2, 0.50);
+			background-color: rgba(30, 115, 190, 1.00)
+		}
+
+		.pum-theme-268 .pum-title,
+		.pum-theme-cutting-edge .pum-title {
+			color: #ffffff;
+			text-align: left;
+			text-shadow: 0px 0px 0px rgba(2, 2, 2, 0.23);
+			font-family: Sans-Serif;
+			font-weight: 100;
+			font-size: 26px;
+			line-height: 28px
+		}
+
+		.pum-theme-268 .pum-content,
+		.pum-theme-cutting-edge .pum-content {
+			color: #ffffff;
+			font-family: inherit;
+			font-weight: 100
+		}
+
+		.pum-theme-268 .pum-content+.pum-close,
+		.pum-theme-cutting-edge .pum-content+.pum-close {
+			position: absolute;
+			height: 24px;
+			width: 24px;
+			left: auto;
+			right: 0px;
+			bottom: auto;
+			top: 0px;
+			padding: 0px;
+			color: #1e73be;
+			font-family: Times New Roman;
+			font-weight: 100;
+			font-size: 32px;
+			line-height: 24px;
+			border: 1px none #ffffff;
+			border-radius: 0px;
+			box-shadow: -1px 1px 1px 0px rgba(2, 2, 2, 0.10);
+			text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.10);
+			background-color: rgba(238, 238, 34, 1.00)
+		}
+
+		/* Popup Theme 269: Framed Border */
+		.pum-theme-269,
+		.pum-theme-framed-border {
+			background-color: rgba(255, 255, 255, 0.50)
+		}
+
+		.pum-theme-269 .pum-container,
+		.pum-theme-framed-border .pum-container {
+			padding: 18px;
+			border-radius: 0px;
+			border: 20px outset #dd3333;
+			box-shadow: 1px 1px 3px 0px rgba(2, 2, 2, 0.97) inset;
+			background-color: rgba(255, 251, 239, 1.00)
+		}
+
+		.pum-theme-269 .pum-title,
+		.pum-theme-framed-border .pum-title {
+			color: #000000;
+			text-align: left;
+			text-shadow: 0px 0px 0px rgba(2, 2, 2, 0.23);
+			font-family: inherit;
+			font-weight: 100;
+			font-size: 32px;
+			line-height: 36px
+		}
+
+		.pum-theme-269 .pum-content,
+		.pum-theme-framed-border .pum-content {
+			color: #2d2d2d;
+			font-family: inherit;
+			font-weight: 100
+		}
+
+		.pum-theme-269 .pum-content+.pum-close,
+		.pum-theme-framed-border .pum-content+.pum-close {
+			position: absolute;
+			height: 20px;
+			width: 20px;
+			left: auto;
+			right: -20px;
+			bottom: auto;
+			top: -20px;
+			padding: 0px;
+			color: #ffffff;
+			font-family: Tahoma;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 18px;
+			border: 1px none #ffffff;
+			border-radius: 0px;
+			box-shadow: 0px 0px 0px 0px rgba(2, 2, 2, 0.23);
+			text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.23);
+			background-color: rgba(0, 0, 0, 0.55)
+		}
+
+		/* Popup Theme 264: Default Theme */
+		.pum-theme-264,
+		.pum-theme-default-theme {
+			background-color: rgba(255, 255, 255, 1.00)
+		}
+
+		.pum-theme-264 .pum-container,
+		.pum-theme-default-theme .pum-container {
+			padding: 18px;
+			border-radius: px;
+			border: 1px none #000000;
+			box-shadow: 1px 1px 3px px rgba(2, 2, 2, 0.23);
+			background-color: rgba(249, 249, 249, 1.00)
+		}
+
+		.pum-theme-264 .pum-title,
+		.pum-theme-default-theme .pum-title {
+			color: #000000;
+			text-align: left;
+			text-shadow: px px px rgba(2, 2, 2, 0.23);
+			font-family: inherit;
+			font-weight: 400;
+			font-size: 32px;
+			font-style: normal;
+			line-height: 36px
+		}
+
+		.pum-theme-264 .pum-content,
+		.pum-theme-default-theme .pum-content {
+			color: #8c8c8c;
+			font-family: inherit;
+			font-weight: 400;
+			font-style: inherit
+		}
+
+		.pum-theme-264 .pum-content+.pum-close,
+		.pum-theme-default-theme .pum-content+.pum-close {
+			position: absolute;
+			height: auto;
+			width: auto;
+			left: auto;
+			right: px;
+			bottom: auto;
+			top: px;
+			padding: 8px;
+			color: #ffffff;
+			font-family: inherit;
+			font-weight: 400;
+			font-size: 12px;
+			font-style: inherit;
+			line-height: 36px;
+			border: 1px none #ffffff;
+			border-radius: px;
+			box-shadow: 1px 1px 3px px rgba(2, 2, 2, 0.23);
+			text-shadow: px px px rgba(0, 0, 0, 0.23);
+			background-color: rgba(0, 183, 205, 1.00)
+		}
+
+		/* Popup Theme 265: Light Box */
+		.pum-theme-265,
+		.pum-theme-lightbox {
+			background-color: rgba(0, 0, 0, 0.60)
+		}
+
+		.pum-theme-265 .pum-container,
+		.pum-theme-lightbox .pum-container {
+			padding: 18px;
+			border-radius: 3px;
+			border: 8px solid #000000;
+			box-shadow: 0px 0px 30px 0px rgba(2, 2, 2, 1.00);
+			background-color: rgba(255, 255, 255, 1.00)
+		}
+
+		.pum-theme-265 .pum-title,
+		.pum-theme-lightbox .pum-title {
+			color: #000000;
+			text-align: left;
+			text-shadow: 0px 0px 0px rgba(2, 2, 2, 0.23);
+			font-family: inherit;
+			font-weight: 100;
+			font-size: 32px;
+			line-height: 36px
+		}
+
+		.pum-theme-265 .pum-content,
+		.pum-theme-lightbox .pum-content {
+			color: #000000;
+			font-family: inherit;
+			font-weight: 100
+		}
+
+		.pum-theme-265 .pum-content+.pum-close,
+		.pum-theme-lightbox .pum-content+.pum-close {
+			position: absolute;
+			height: 26px;
+			width: 26px;
+			left: auto;
+			right: -13px;
+			bottom: auto;
+			top: -13px;
+			padding: 0px;
+			color: #ffffff;
+			font-family: Arial;
+			font-weight: 100;
+			font-size: 24px;
+			line-height: 24px;
+			border: 2px solid #ffffff;
+			border-radius: 26px;
+			box-shadow: 0px 0px 15px 1px rgba(2, 2, 2, 0.75);
+			text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.23);
+			background-color: rgba(0, 0, 0, 1.00)
+		}
+
+		/* Popup Theme 266: Enterprise Blue */
+		.pum-theme-266,
+		.pum-theme-enterprise-blue {
+			background-color: rgba(0, 0, 0, 0.70)
+		}
+
+		.pum-theme-266 .pum-container,
+		.pum-theme-enterprise-blue .pum-container {
+			padding: 28px;
+			border-radius: 5px;
+			border: 1px none #000000;
+			box-shadow: 0px 10px 25px 4px rgba(2, 2, 2, 0.50);
+			background-color: rgba(255, 255, 255, 1.00)
+		}
+
+		.pum-theme-266 .pum-title,
+		.pum-theme-enterprise-blue .pum-title {
+			color: #315b7c;
+			text-align: left;
+			text-shadow: 0px 0px 0px rgba(2, 2, 2, 0.23);
+			font-family: inherit;
+			font-weight: 100;
+			font-size: 34px;
+			line-height: 36px
+		}
+
+		.pum-theme-266 .pum-content,
+		.pum-theme-enterprise-blue .pum-content {
+			color: #2d2d2d;
+			font-family: inherit;
+			font-weight: 100
+		}
+
+		.pum-theme-266 .pum-content+.pum-close,
+		.pum-theme-enterprise-blue .pum-content+.pum-close {
+			position: absolute;
+			height: 28px;
+			width: 28px;
+			left: auto;
+			right: 8px;
+			bottom: auto;
+			top: 8px;
+			padding: 4px;
+			color: #ffffff;
+			font-family: Times New Roman;
+			font-weight: 100;
+			font-size: 20px;
+			line-height: 20px;
+			border: 1px none #ffffff;
+			border-radius: 42px;
+			box-shadow: 0px 0px 0px 0px rgba(2, 2, 2, 0.23);
+			text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.23);
+			background-color: rgba(49, 91, 124, 1.00)
+		}
+
+		#pum-418 {
+			z-index: 1999999999
+		}
+
+		#pum-422 {
+			z-index: 1999999999
+		}
+
+		#pum-425 {
+			z-index: 1999999999
+		}
+
+		#pum-280 {
+			z-index: 1999999999
+		}
+
+		#pum-305 {
+			z-index: 1999999999
+		}
+
+		#pum-340 {
+			z-index: 1999999999
+		}
+	</style>
+	<script src="GPADS_arquivos/jquery.js"></script>
+	<script src="GPADS_arquivos/jquery-migrate.min.js"></script>
+	<script src="GPADS_arquivos/slick.min.js"></script>
+	<script src="GPADS_arquivos/post-carousel.js"></script>
+	<script src="GPADS_arquivos/imagesloaded.min.js"></script>
+	<style id="mystickymenu" type="text/css">
+		#mysticky-nav {
+			width: 100%;
+			position: static;
+		}
+
+		#mysticky-nav.wrapfixed {
+			position: fixed;
+			left: 0px;
+			margin-top: 0px;
+			z-index: 99990;
+			-webkit-transition: 0.3s;
+			-moz-transition: 0.3s;
+			-o-transition: 0.3s;
+			transition: 0.3s;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=72)";
+			filter: alpha(opacity=72);
+			opacity: 0.72;
+			background-color: #273742;
+		}
+
+		#mysticky-nav .myfixed {
+			margin: 0 auto;
+			float: none;
+			border: 0px;
+			background: none;
+			max-width: 100%;
+		}
+	</style>
+	<style type="text/css">
+	</style>
+	<style>
+		.recentcomments a {
+			display: inline !important;
+			padding: 0 !important;
+			margin: 0 !important;
+		}
+	</style>
+	<style type="text/css" media="all" id="uagb-style-frontend">
+		#uagb-section-8d9ebfac-38d3-457b-b17b-8d38135187da.uagb-section__wrap {
+			padding-top: 0;
+			padding-bottom: 0;
+			padding-left: 0;
+			padding-right: 0;
+			margin-right: auto;
+			margin-left: auto;
+			max-width: 100%;
+			background-image: url('https://web.archive.org/web/20230214165204im_/http://gpads.recife.ifpe.edu.br/wp-content/uploads/2019/10/back.jpg');
+			background-position: center center;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		#uagb-section-8d9ebfac-38d3-457b-b17b-8d38135187da>.uagb-section__video-wrap {
+			opacity: 0.5;
+		}
+
+		#uagb-section-8d9ebfac-38d3-457b-b17b-8d38135187da>.uagb-section__inner-wrap {
+			max-width: 1200px;
+		}
+
+		#uagb-section-8d9ebfac-38d3-457b-b17b-8d38135187da>.uagb-section__overlay {
+			opacity: 0;
+		}
+
+		#uagb-infobox-85956b60-bfce-4ce6-800c-95f1062f20fe .uagb-ifb-icon {
+			height: 40px;
+			width: 40px;
+			line-height: 40px;
+		}
+
+		#uagb-infobox-85956b60-bfce-4ce6-800c-95f1062f20fe .uagb-ifb-icon>span {
+			font-size: 40px;
+			height: 40px;
+			width: 40px;
+			line-height: 40px;
+			color: #333;
+		}
+
+		#uagb-infobox-85956b60-bfce-4ce6-800c-95f1062f20fe .uagb-ifb-icon svg {
+			fill: #333;
+		}
+
+		#uagb-infobox-85956b60-bfce-4ce6-800c-95f1062f20fe .uagb-infobox__content-wrap .uagb-ifb-imgicon-wrap {
+			margin-left: 5px;
+			margin-right: 10px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		#uagb-infobox-85956b60-bfce-4ce6-800c-95f1062f20fe .uagb-infobox-cta-link {
+			font-size: 20px;
+			color: #333;
+		}
+
+		#uagb-infobox-85956b60-bfce-4ce6-800c-95f1062f20fe .uagb-infobox-cta-link .uagb-ifb-button-icon {
+			font-size: 20px;
+			height: 20px;
+			width: 20px;
+			line-height: 20px;
+		}
+
+		#uagb-infobox-85956b60-bfce-4ce6-800c-95f1062f20fe .uagb-infobox-cta-link .uagb-ifb-text-icon {
+			font-size: 20px;
+			height: 20px;
+			width: 20px;
+			line-height: 20px;
+		}
+
+		#uagb-infobox-85956b60-bfce-4ce6-800c-95f1062f20fe .uagb-infobox-cta-link svg {
+			fill: #333;
+		}
+
+		#uagb-infobox-85956b60-bfce-4ce6-800c-95f1062f20fe .uagb-ifb-button-wrapper .uagb-infobox-cta-link {
+			color: #ffffff;
+			background-color: #1b676b;
+			border-style: none;
+			border-color: #333;
+			border-radius: 100px;
+			border-width: 1px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+
+		#uagb-infobox-85956b60-bfce-4ce6-800c-95f1062f20fe .uagb-ifb-button-wrapper .uagb-infobox-cta-link svg {
+			fill: #ffffff;
+		}
+
+		#uagb-infobox-85956b60-bfce-4ce6-800c-95f1062f20fe .uagb-ifb-button-wrapper .uagb-infobox-cta-link:hover {
+			background-color: #00ab4f;
+		}
+
+		#uagb-infobox-85956b60-bfce-4ce6-800c-95f1062f20fe .uagb-ifb-title-prefix {
+			color: #daa520;
+			margin-bottom: 5px;
+		}
+
+		#uagb-infobox-85956b60-bfce-4ce6-800c-95f1062f20fe .uagb-ifb-title {
+			font-size: 50px;
+			font-weight: 100;
+			color: #ffffff;
+			margin-bottom: 10px;
+		}
+
+		#uagb-infobox-85956b60-bfce-4ce6-800c-95f1062f20fe .uagb-ifb-desc {
+			font-size: 25px;
+			color: #ffffff;
+			margin-bottom: 10px;
+		}
+
+		#uagb-infobox-85956b60-bfce-4ce6-800c-95f1062f20fe .uagb-ifb-separator {
+			width: 30%;
+			border-top-width: 2px;
+			border-top-color: #ffffff;
+			border-top-style: none;
+		}
+
+		#uagb-infobox-85956b60-bfce-4ce6-800c-95f1062f20fe .uagb-ifb-separator-parent {
+			margin-bottom: 15px;
+		}
+
+		#uagb-infobox-85956b60-bfce-4ce6-800c-95f1062f20fe .uagb-ifb-align-icon-after {
+			margin-left: 5px;
+		}
+
+		#uagb-infobox-85956b60-bfce-4ce6-800c-95f1062f20fe .uagb-ifb-align-icon-before {
+			margin-right: 5px;
+		}
+
+		#uagb-infobox-85956b60-bfce-4ce6-800c-95f1062f20fe .uagb-ifb-image-content>img {
+			width: 120px;
+			max-width: 120px;
+		}
+
+		#uagb-infobox-85956b60-bfce-4ce6-800c-95f1062f20fe .uagb-infobox__content-wrap {
+			text-align: center;
+		}
+
+		#uagb-section-efee3c08-2249-4147-9beb-4b9ac4677ef1.uagb-section__wrap {
+			padding-top: 100px;
+			padding-bottom: 100px;
+			padding-left: 0;
+			padding-right: 0;
+			margin-right: auto;
+			margin-left: auto;
+			max-width: 100%;
+		}
+
+		#uagb-section-efee3c08-2249-4147-9beb-4b9ac4677ef1>.uagb-section__video-wrap {
+			opacity: 0.5;
+		}
+
+		#uagb-section-efee3c08-2249-4147-9beb-4b9ac4677ef1>.uagb-section__inner-wrap {
+			max-width: 1200px;
+		}
+
+		#uagb-columns-41b02c3c-edf4-44c4-86c7-b855524e4e6e.uagb-columns__wrap {
+			padding-top: 50px;
+			padding-bottom: 25px;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		#uagb-columns-41b02c3c-edf4-44c4-86c7-b855524e4e6e .uagb-columns__video-wrap {
+			opacity: 0.5;
+		}
+
+		#uagb-columns-41b02c3c-edf4-44c4-86c7-b855524e4e6e>.uagb-columns__inner-wrap {
+			max-width: 1200px;
+		}
+
+		#uagb-columns-41b02c3c-edf4-44c4-86c7-b855524e4e6e .uagb-column__inner-wrap {
+			padding: 10px;
+		}
+
+		#uagb-columns-41b02c3c-edf4-44c4-86c7-b855524e4e6e .uagb-columns__shape-top .uagb-columns__shape-fill {
+			fill: #333;
+		}
+
+		#uagb-columns-41b02c3c-edf4-44c4-86c7-b855524e4e6e .uagb-columns__shape-bottom .uagb-columns__shape-fill {
+			fill: #333;
+		}
+
+		#uagb-icon-list-916ceac8-d64e-4440-bba9-ea1705917e25.uagb-icon-list__layout-vertical .uagb-icon-list__wrapper {
+			margin-left: 0;
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
+
+		#uagb-icon-list-916ceac8-d64e-4440-bba9-ea1705917e25.uagb-icon-list__layout-vertical .uagb-icon-list__wrap {
+			flex-direction: column;
+		}
+
+		#uagb-icon-list-916ceac8-d64e-4440-bba9-ea1705917e25.uagb-icon-list__layout-vertical .uagb-icon-list__wrapper:last-child {
+			margin-bottom: 0;
+		}
+
+		#uagb-icon-list-916ceac8-d64e-4440-bba9-ea1705917e25.uagb-icon-list__layout-horizontal .uagb-icon-list__wrapper {
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+
+		#uagb-icon-list-916ceac8-d64e-4440-bba9-ea1705917e25.uagb-icon-list__layout-horizontal .uagb-icon-list__wrapper:first-child {
+			margin-left: 0;
+		}
+
+		#uagb-icon-list-916ceac8-d64e-4440-bba9-ea1705917e25.uagb-icon-list__layout-horizontal .uagb-icon-list__wrapper:last-child {
+			margin-right: 0;
+		}
+
+		#uagb-icon-list-916ceac8-d64e-4440-bba9-ea1705917e25 .uagb-icon-list__source-image {
+			width: 80px;
+		}
+
+		#uagb-icon-list-916ceac8-d64e-4440-bba9-ea1705917e25 .uagb-icon-list__source-icon {
+			width: 80px;
+			height: 80px;
+			font-size: 80px;
+		}
+
+		#uagb-icon-list-916ceac8-d64e-4440-bba9-ea1705917e25 .uagb-icon-list__source-icon svg {
+			width: 80px;
+			height: 80px;
+		}
+
+		#uagb-icon-list-916ceac8-d64e-4440-bba9-ea1705917e25 .uagb-icon-list__source-icon:before {
+			width: 80px;
+			height: 80px;
+			font-size: 80px;
+		}
+
+		#uagb-icon-list-916ceac8-d64e-4440-bba9-ea1705917e25 .uagb-icon-list__label-wrap {
+			text-align: center;
+		}
+
+		#uagb-icon-list-916ceac8-d64e-4440-bba9-ea1705917e25 .uagb-icon-list__source-wrap {
+			padding: 25px;
+			border-radius: 100px;
+		}
+
+		#uagb-icon-list-916ceac8-d64e-4440-bba9-ea1705917e25 .uagb-icon-list__wrap {
+			justify-content: center;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+
+		#uagb-icon-list-916ceac8-d64e-4440-bba9-ea1705917e25:not(.uagb-icon-list__no-label) .uagb-icon-list__source-wrap {
+			margin-right: 15px;
+		}
+
+		#uagb-icon-list-916ceac8-d64e-4440-bba9-ea1705917e25 .uagb-icon-list-repeater-0 .uagb-icon-list__source-icon {
+			color: #ffffff;
+		}
+
+		#uagb-icon-list-916ceac8-d64e-4440-bba9-ea1705917e25 .uagb-icon-list-repeater-0 .uagb-icon-list__source-icon svg {
+			fill: #ffffff;
+		}
+
+		#uagb-icon-list-916ceac8-d64e-4440-bba9-ea1705917e25 .uagb-icon-list-repeater-0 .uagb-icon-list__label {
+			line-height: em;
+		}
+
+		#uagb-icon-list-916ceac8-d64e-4440-bba9-ea1705917e25 .uagb-icon-list-repeater-0 .uagb-icon-list__source-wrap {
+			background: #1b676b;
+		}
+
+		#uagb-adv-heading-153abd72-3c8d-4447-9034-62c453e78a72 .uagb-heading-text {
+			text-align: center;
+			margin-bottom: 15px;
+		}
+
+		#uagb-adv-heading-153abd72-3c8d-4447-9034-62c453e78a72 .uagb-separator-wrap {
+			text-align: center;
+		}
+
+		#uagb-adv-heading-153abd72-3c8d-4447-9034-62c453e78a72 .uagb-desc-text {
+			text-align: center;
+		}
+
+		#uagb-icon-list-b9223968-25c0-435e-bae2-eac5ba11b871.uagb-icon-list__layout-vertical .uagb-icon-list__wrapper {
+			margin-left: 0;
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
+
+		#uagb-icon-list-b9223968-25c0-435e-bae2-eac5ba11b871.uagb-icon-list__layout-vertical .uagb-icon-list__wrap {
+			flex-direction: column;
+		}
+
+		#uagb-icon-list-b9223968-25c0-435e-bae2-eac5ba11b871.uagb-icon-list__layout-vertical .uagb-icon-list__wrapper:last-child {
+			margin-bottom: 0;
+		}
+
+		#uagb-icon-list-b9223968-25c0-435e-bae2-eac5ba11b871.uagb-icon-list__layout-horizontal .uagb-icon-list__wrapper {
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+
+		#uagb-icon-list-b9223968-25c0-435e-bae2-eac5ba11b871.uagb-icon-list__layout-horizontal .uagb-icon-list__wrapper:first-child {
+			margin-left: 0;
+		}
+
+		#uagb-icon-list-b9223968-25c0-435e-bae2-eac5ba11b871.uagb-icon-list__layout-horizontal .uagb-icon-list__wrapper:last-child {
+			margin-right: 0;
+		}
+
+		#uagb-icon-list-b9223968-25c0-435e-bae2-eac5ba11b871 .uagb-icon-list__source-image {
+			width: 70px;
+		}
+
+		#uagb-icon-list-b9223968-25c0-435e-bae2-eac5ba11b871 .uagb-icon-list__source-icon {
+			width: 70px;
+			height: 70px;
+			font-size: 70px;
+		}
+
+		#uagb-icon-list-b9223968-25c0-435e-bae2-eac5ba11b871 .uagb-icon-list__source-icon svg {
+			width: 70px;
+			height: 70px;
+		}
+
+		#uagb-icon-list-b9223968-25c0-435e-bae2-eac5ba11b871 .uagb-icon-list__source-icon:before {
+			width: 70px;
+			height: 70px;
+			font-size: 70px;
+		}
+
+		#uagb-icon-list-b9223968-25c0-435e-bae2-eac5ba11b871 .uagb-icon-list__label-wrap {
+			text-align: center;
+		}
+
+		#uagb-icon-list-b9223968-25c0-435e-bae2-eac5ba11b871 .uagb-icon-list__source-wrap {
+			padding: 30px;
+			border-radius: 100px;
+		}
+
+		#uagb-icon-list-b9223968-25c0-435e-bae2-eac5ba11b871 .uagb-icon-list__wrap {
+			justify-content: center;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+
+		#uagb-icon-list-b9223968-25c0-435e-bae2-eac5ba11b871:not(.uagb-icon-list__no-label) .uagb-icon-list__source-wrap {
+			margin-right: 15px;
+		}
+
+		#uagb-icon-list-b9223968-25c0-435e-bae2-eac5ba11b871 .uagb-icon-list-repeater-0 .uagb-icon-list__source-icon {
+			color: #ffffff;
+		}
+
+		#uagb-icon-list-b9223968-25c0-435e-bae2-eac5ba11b871 .uagb-icon-list-repeater-0 .uagb-icon-list__source-icon svg {
+			fill: #ffffff;
+		}
+
+		#uagb-icon-list-b9223968-25c0-435e-bae2-eac5ba11b871 .uagb-icon-list-repeater-0 .uagb-icon-list__label {
+			line-height: em;
+		}
+
+		#uagb-icon-list-b9223968-25c0-435e-bae2-eac5ba11b871 .uagb-icon-list-repeater-0 .uagb-icon-list__source-wrap {
+			background: #1b676b;
+		}
+
+		#uagb-adv-heading-888d57a7-1528-4193-9d0f-707c5f70935c .uagb-heading-text {
+			text-align: center;
+			margin-bottom: 15px;
+		}
+
+		#uagb-adv-heading-888d57a7-1528-4193-9d0f-707c5f70935c .uagb-separator-wrap {
+			text-align: center;
+		}
+
+		#uagb-adv-heading-888d57a7-1528-4193-9d0f-707c5f70935c .uagb-desc-text {
+			text-align: center;
+		}
+
+		#uagb-icon-list-b77bc6b9-5c9a-4c03-b8d1-9cd7ee88b792.uagb-icon-list__layout-vertical .uagb-icon-list__wrapper {
+			margin-left: 0;
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
+
+		#uagb-icon-list-b77bc6b9-5c9a-4c03-b8d1-9cd7ee88b792.uagb-icon-list__layout-vertical .uagb-icon-list__wrap {
+			flex-direction: column;
+		}
+
+		#uagb-icon-list-b77bc6b9-5c9a-4c03-b8d1-9cd7ee88b792.uagb-icon-list__layout-vertical .uagb-icon-list__wrapper:last-child {
+			margin-bottom: 0;
+		}
+
+		#uagb-icon-list-b77bc6b9-5c9a-4c03-b8d1-9cd7ee88b792.uagb-icon-list__layout-horizontal .uagb-icon-list__wrapper {
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+
+		#uagb-icon-list-b77bc6b9-5c9a-4c03-b8d1-9cd7ee88b792.uagb-icon-list__layout-horizontal .uagb-icon-list__wrapper:first-child {
+			margin-left: 0;
+		}
+
+		#uagb-icon-list-b77bc6b9-5c9a-4c03-b8d1-9cd7ee88b792.uagb-icon-list__layout-horizontal .uagb-icon-list__wrapper:last-child {
+			margin-right: 0;
+		}
+
+		#uagb-icon-list-b77bc6b9-5c9a-4c03-b8d1-9cd7ee88b792 .uagb-icon-list__source-image {
+			width: 70px;
+		}
+
+		#uagb-icon-list-b77bc6b9-5c9a-4c03-b8d1-9cd7ee88b792 .uagb-icon-list__source-icon {
+			width: 70px;
+			height: 70px;
+			font-size: 70px;
+		}
+
+		#uagb-icon-list-b77bc6b9-5c9a-4c03-b8d1-9cd7ee88b792 .uagb-icon-list__source-icon svg {
+			width: 70px;
+			height: 70px;
+		}
+
+		#uagb-icon-list-b77bc6b9-5c9a-4c03-b8d1-9cd7ee88b792 .uagb-icon-list__source-icon:before {
+			width: 70px;
+			height: 70px;
+			font-size: 70px;
+		}
+
+		#uagb-icon-list-b77bc6b9-5c9a-4c03-b8d1-9cd7ee88b792 .uagb-icon-list__label-wrap {
+			text-align: center;
+		}
+
+		#uagb-icon-list-b77bc6b9-5c9a-4c03-b8d1-9cd7ee88b792 .uagb-icon-list__source-wrap {
+			padding: 30px;
+			border-radius: 100px;
+		}
+
+		#uagb-icon-list-b77bc6b9-5c9a-4c03-b8d1-9cd7ee88b792 .uagb-icon-list__wrap {
+			justify-content: center;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+
+		#uagb-icon-list-b77bc6b9-5c9a-4c03-b8d1-9cd7ee88b792:not(.uagb-icon-list__no-label) .uagb-icon-list__source-wrap {
+			margin-right: 15px;
+		}
+
+		#uagb-icon-list-b77bc6b9-5c9a-4c03-b8d1-9cd7ee88b792 .uagb-icon-list-repeater-0 .uagb-icon-list__source-icon {
+			color: #ffffff;
+		}
+
+		#uagb-icon-list-b77bc6b9-5c9a-4c03-b8d1-9cd7ee88b792 .uagb-icon-list-repeater-0 .uagb-icon-list__source-icon svg {
+			fill: #ffffff;
+		}
+
+		#uagb-icon-list-b77bc6b9-5c9a-4c03-b8d1-9cd7ee88b792 .uagb-icon-list-repeater-0 .uagb-icon-list__label {
+			line-height: em;
+		}
+
+		#uagb-icon-list-b77bc6b9-5c9a-4c03-b8d1-9cd7ee88b792 .uagb-icon-list-repeater-0 .uagb-icon-list__source-wrap {
+			background: #1b676b;
+		}
+
+		#uagb-adv-heading-a2957516-867d-4789-8eb6-200769d2d194 .uagb-heading-text {
+			text-align: center;
+			margin-bottom: 15px;
+		}
+
+		#uagb-adv-heading-a2957516-867d-4789-8eb6-200769d2d194 .uagb-separator-wrap {
+			text-align: center;
+		}
+
+		#uagb-adv-heading-a2957516-867d-4789-8eb6-200769d2d194 .uagb-desc-text {
+			text-align: center;
+		}
+
+		#uagb-columns-0c8ae891-d3d7-45f4-9302-506463836cff.uagb-columns__wrap {
+			padding-top: 25px;
+			padding-bottom: 50px;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		#uagb-columns-0c8ae891-d3d7-45f4-9302-506463836cff .uagb-columns__video-wrap {
+			opacity: 0.5;
+		}
+
+		#uagb-columns-0c8ae891-d3d7-45f4-9302-506463836cff>.uagb-columns__inner-wrap {
+			max-width: 1200px;
+		}
+
+		#uagb-columns-0c8ae891-d3d7-45f4-9302-506463836cff .uagb-column__inner-wrap {
+			padding: 10px;
+		}
+
+		#uagb-columns-0c8ae891-d3d7-45f4-9302-506463836cff .uagb-columns__shape-top .uagb-columns__shape-fill {
+			fill: #333;
+		}
+
+		#uagb-columns-0c8ae891-d3d7-45f4-9302-506463836cff .uagb-columns__shape-bottom .uagb-columns__shape-fill {
+			fill: #333;
+		}
+
+		#uagb-icon-list-1daa969e-53e6-4429-9dad-e6acd4c08a04.uagb-icon-list__layout-vertical .uagb-icon-list__wrapper {
+			margin-left: 0;
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
+
+		#uagb-icon-list-1daa969e-53e6-4429-9dad-e6acd4c08a04.uagb-icon-list__layout-vertical .uagb-icon-list__wrap {
+			flex-direction: column;
+		}
+
+		#uagb-icon-list-1daa969e-53e6-4429-9dad-e6acd4c08a04.uagb-icon-list__layout-vertical .uagb-icon-list__wrapper:last-child {
+			margin-bottom: 0;
+		}
+
+		#uagb-icon-list-1daa969e-53e6-4429-9dad-e6acd4c08a04.uagb-icon-list__layout-horizontal .uagb-icon-list__wrapper {
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+
+		#uagb-icon-list-1daa969e-53e6-4429-9dad-e6acd4c08a04.uagb-icon-list__layout-horizontal .uagb-icon-list__wrapper:first-child {
+			margin-left: 0;
+		}
+
+		#uagb-icon-list-1daa969e-53e6-4429-9dad-e6acd4c08a04.uagb-icon-list__layout-horizontal .uagb-icon-list__wrapper:last-child {
+			margin-right: 0;
+		}
+
+		#uagb-icon-list-1daa969e-53e6-4429-9dad-e6acd4c08a04 .uagb-icon-list__source-image {
+			width: 70px;
+		}
+
+		#uagb-icon-list-1daa969e-53e6-4429-9dad-e6acd4c08a04 .uagb-icon-list__source-icon {
+			width: 70px;
+			height: 70px;
+			font-size: 70px;
+		}
+
+		#uagb-icon-list-1daa969e-53e6-4429-9dad-e6acd4c08a04 .uagb-icon-list__source-icon svg {
+			width: 70px;
+			height: 70px;
+		}
+
+		#uagb-icon-list-1daa969e-53e6-4429-9dad-e6acd4c08a04 .uagb-icon-list__source-icon:before {
+			width: 70px;
+			height: 70px;
+			font-size: 70px;
+		}
+
+		#uagb-icon-list-1daa969e-53e6-4429-9dad-e6acd4c08a04 .uagb-icon-list__label-wrap {
+			text-align: center;
+		}
+
+		#uagb-icon-list-1daa969e-53e6-4429-9dad-e6acd4c08a04 .uagb-icon-list__source-wrap {
+			padding: 30px;
+			border-radius: 100px;
+		}
+
+		#uagb-icon-list-1daa969e-53e6-4429-9dad-e6acd4c08a04 .uagb-icon-list__wrap {
+			justify-content: center;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+
+		#uagb-icon-list-1daa969e-53e6-4429-9dad-e6acd4c08a04:not(.uagb-icon-list__no-label) .uagb-icon-list__source-wrap {
+			margin-right: 15px;
+		}
+
+		#uagb-icon-list-1daa969e-53e6-4429-9dad-e6acd4c08a04 .uagb-icon-list-repeater-0 .uagb-icon-list__source-icon {
+			color: #ffffff;
+		}
+
+		#uagb-icon-list-1daa969e-53e6-4429-9dad-e6acd4c08a04 .uagb-icon-list-repeater-0 .uagb-icon-list__source-icon svg {
+			fill: #ffffff;
+		}
+
+		#uagb-icon-list-1daa969e-53e6-4429-9dad-e6acd4c08a04 .uagb-icon-list-repeater-0 .uagb-icon-list__label {
+			line-height: em;
+		}
+
+		#uagb-icon-list-1daa969e-53e6-4429-9dad-e6acd4c08a04 .uagb-icon-list-repeater-0 .uagb-icon-list__source-wrap {
+			background: #1b676b;
+		}
+
+		#uagb-adv-heading-99ef350c-804f-40ca-a82c-ec42eeb96401 .uagb-heading-text {
+			text-align: center;
+			margin-bottom: 15px;
+		}
+
+		#uagb-adv-heading-99ef350c-804f-40ca-a82c-ec42eeb96401 .uagb-separator-wrap {
+			text-align: center;
+		}
+
+		#uagb-adv-heading-99ef350c-804f-40ca-a82c-ec42eeb96401 .uagb-desc-text {
+			text-align: center;
+		}
+
+		#uagb-icon-list-a892937b-6f60-4745-8bf0-6abab888275e.uagb-icon-list__layout-vertical .uagb-icon-list__wrapper {
+			margin-left: 0;
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
+
+		#uagb-icon-list-a892937b-6f60-4745-8bf0-6abab888275e.uagb-icon-list__layout-vertical .uagb-icon-list__wrap {
+			flex-direction: column;
+		}
+
+		#uagb-icon-list-a892937b-6f60-4745-8bf0-6abab888275e.uagb-icon-list__layout-vertical .uagb-icon-list__wrapper:last-child {
+			margin-bottom: 0;
+		}
+
+		#uagb-icon-list-a892937b-6f60-4745-8bf0-6abab888275e.uagb-icon-list__layout-horizontal .uagb-icon-list__wrapper {
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+
+		#uagb-icon-list-a892937b-6f60-4745-8bf0-6abab888275e.uagb-icon-list__layout-horizontal .uagb-icon-list__wrapper:first-child {
+			margin-left: 0;
+		}
+
+		#uagb-icon-list-a892937b-6f60-4745-8bf0-6abab888275e.uagb-icon-list__layout-horizontal .uagb-icon-list__wrapper:last-child {
+			margin-right: 0;
+		}
+
+		#uagb-icon-list-a892937b-6f60-4745-8bf0-6abab888275e .uagb-icon-list__source-image {
+			width: 80px;
+		}
+
+		#uagb-icon-list-a892937b-6f60-4745-8bf0-6abab888275e .uagb-icon-list__source-icon {
+			width: 80px;
+			height: 80px;
+			font-size: 80px;
+		}
+
+		#uagb-icon-list-a892937b-6f60-4745-8bf0-6abab888275e .uagb-icon-list__source-icon svg {
+			width: 80px;
+			height: 80px;
+		}
+
+		#uagb-icon-list-a892937b-6f60-4745-8bf0-6abab888275e .uagb-icon-list__source-icon:before {
+			width: 80px;
+			height: 80px;
+			font-size: 80px;
+		}
+
+		#uagb-icon-list-a892937b-6f60-4745-8bf0-6abab888275e .uagb-icon-list__label-wrap {
+			text-align: center;
+		}
+
+		#uagb-icon-list-a892937b-6f60-4745-8bf0-6abab888275e .uagb-icon-list__source-wrap {
+			padding: 25px;
+			border-radius: 100px;
+		}
+
+		#uagb-icon-list-a892937b-6f60-4745-8bf0-6abab888275e .uagb-icon-list__wrap {
+			justify-content: center;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+
+		#uagb-icon-list-a892937b-6f60-4745-8bf0-6abab888275e:not(.uagb-icon-list__no-label) .uagb-icon-list__source-wrap {
+			margin-right: 15px;
+		}
+
+		#uagb-icon-list-a892937b-6f60-4745-8bf0-6abab888275e .uagb-icon-list-repeater-0 .uagb-icon-list__source-icon {
+			color: #ffffff;
+		}
+
+		#uagb-icon-list-a892937b-6f60-4745-8bf0-6abab888275e .uagb-icon-list-repeater-0 .uagb-icon-list__source-icon svg {
+			fill: #ffffff;
+		}
+
+		#uagb-icon-list-a892937b-6f60-4745-8bf0-6abab888275e .uagb-icon-list-repeater-0 .uagb-icon-list__label {
+			line-height: em;
+		}
+
+		#uagb-icon-list-a892937b-6f60-4745-8bf0-6abab888275e .uagb-icon-list-repeater-0 .uagb-icon-list__source-wrap {
+			background: #1b676b;
+		}
+
+		#uagb-adv-heading-bbee627d-643b-47bb-946a-2fd569805a87 .uagb-heading-text {
+			text-align: center;
+			margin-bottom: 15px;
+		}
+
+		#uagb-adv-heading-bbee627d-643b-47bb-946a-2fd569805a87 .uagb-separator-wrap {
+			text-align: center;
+		}
+
+		#uagb-adv-heading-bbee627d-643b-47bb-946a-2fd569805a87 .uagb-desc-text {
+			text-align: center;
+		}
+
+		#uagb-section-cd6a1176-c202-40c1-a131-2f9bccdf8746.uagb-section__wrap {
+			padding-top: 100px;
+			padding-bottom: 100px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		#uagb-section-cd6a1176-c202-40c1-a131-2f9bccdf8746>.uagb-section__video-wrap {
+			opacity: 0.5;
+		}
+
+		#uagb-section-cd6a1176-c202-40c1-a131-2f9bccdf8746>.uagb-section__inner-wrap {
+			max-width: 1200px;
+		}
+
+		#uagb-section-cd6a1176-c202-40c1-a131-2f9bccdf8746>.uagb-section__overlay {
+			background-color: #eeeeee;
+		}
+
+		#uagb-post__carousel-0572725f-142e-45d2-a081-ad27cd2256f8 .uagb-post__items {
+			margin-right: 0;
+			margin-left: 0;
+		}
+
+		#uagb-post__carousel-0572725f-142e-45d2-a081-ad27cd2256f8 .uagb-post__items article {
+			padding-right: 0;
+			padding-left: 0;
+			margin-bottom: 50px;
+		}
+
+		#uagb-post__carousel-0572725f-142e-45d2-a081-ad27cd2256f8 .uagb-post__inner-wrap {
+			background: #bebebe;
+		}
+
+		#uagb-post__carousel-0572725f-142e-45d2-a081-ad27cd2256f8 .uagb-post__text {
+			padding: 20px;
+			text-align: center;
+		}
+
+		#uagb-post__carousel-0572725f-142e-45d2-a081-ad27cd2256f8 .uagb-post__text .uagb-post__title {
+			color: #3b3b3b;
+			margin-bottom: 15px;
+		}
+
+		#uagb-post__carousel-0572725f-142e-45d2-a081-ad27cd2256f8 .uagb-post__text .uagb-post__title a {
+			color: #3b3b3b;
+		}
+
+		#uagb-post__carousel-0572725f-142e-45d2-a081-ad27cd2256f8 .uagb-post__text .uagb-post-grid-byline {
+			color: #777777;
+			margin-bottom: 15px;
+		}
+
+		#uagb-post__carousel-0572725f-142e-45d2-a081-ad27cd2256f8 .uagb-post__text .uagb-post-grid-byline .uagb-post__author {
+			color: #777777;
+		}
+
+		#uagb-post__carousel-0572725f-142e-45d2-a081-ad27cd2256f8 .uagb-post__text .uagb-post-grid-byline .uagb-post__author a {
+			color: #777777;
+		}
+
+		#uagb-post__carousel-0572725f-142e-45d2-a081-ad27cd2256f8 .uagb-post__text .uagb-post__excerpt {
+			margin-bottom: 25px;
+		}
+
+		#uagb-post__carousel-0572725f-142e-45d2-a081-ad27cd2256f8 .uagb-post__text .uagb-post__cta {
+			color: #ffffff;
+			font-size: 20px;
+			font-family: Padrão;
+			background: #1b676b;
+			border-width: 2px;
+			border-radius: 50px;
+			border-style: none;
+		}
+
+		#uagb-post__carousel-0572725f-142e-45d2-a081-ad27cd2256f8 .uagb-post__text .uagb-post__cta a {
+			color: #ffffff;
+			font-size: 20px;
+			font-family: Padrão;
+			padding: 15px 50px;
+		}
+
+		#uagb-post__carousel-0572725f-142e-45d2-a081-ad27cd2256f8 .uagb-post__text .uagb-post__cta:hover {
+			background: #00ab4f;
+		}
+
+		#uagb-post__carousel-0572725f-142e-45d2-a081-ad27cd2256f8 .uagb-post__image:before {
+			background-color: #ffffff;
+			opacity: 0.5;
+		}
+
+		#uagb-post__carousel-0572725f-142e-45d2-a081-ad27cd2256f8 .slick-arrow {
+			border-color: #aaaaaa;
+			border-width: 1px;
+			border-radius: 50px;
+		}
+
+		#uagb-post__carousel-0572725f-142e-45d2-a081-ad27cd2256f8 .slick-arrow span {
+			color: #aaaaaa;
+			font-size: 20px;
+			width: 20px;
+			height: 20px;
+		}
+
+		#uagb-post__carousel-0572725f-142e-45d2-a081-ad27cd2256f8 .slick-arrow svg {
+			fill: #aaaaaa;
+			width: 20px;
+			height: 20px;
+		}
+
+		#uagb-post__carousel-0572725f-142e-45d2-a081-ad27cd2256f8.uagb-post-grid ul.slick-dots li.slick-active button:before {
+			color: #aaaaaa;
+		}
+
+		#uagb-post__carousel-0572725f-142e-45d2-a081-ad27cd2256f8.uagb-slick-carousel ul.slick-dots li button:before {
+			color: #aaaaaa;
+		}
+
+		#uagb-section-45e57c9d-1032-407b-a0ff-22985fdcac64.uagb-section__wrap {
+			padding-top: 100px;
+			padding-bottom: 100px;
+			padding-left: 20px;
+			padding-right: 20px;
+			margin-right: auto;
+			margin-left: auto;
+			max-width: 100%;
+		}
+
+		#uagb-section-45e57c9d-1032-407b-a0ff-22985fdcac64>.uagb-section__video-wrap {
+			opacity: 0.5;
+		}
+
+		#uagb-section-45e57c9d-1032-407b-a0ff-22985fdcac64>.uagb-section__inner-wrap {
+			max-width: 1200px;
+		}
+
+		#uagb-columns-ac8a9d71-1598-4743-adcf-3a1d433c8ea6.uagb-columns__wrap {
+			padding-top: 50px;
+			padding-bottom: 0;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		#uagb-columns-ac8a9d71-1598-4743-adcf-3a1d433c8ea6 .uagb-columns__video-wrap {
+			opacity: 0.5;
+		}
+
+		#uagb-columns-ac8a9d71-1598-4743-adcf-3a1d433c8ea6>.uagb-columns__inner-wrap {
+			max-width: 1200px;
+		}
+
+		#uagb-columns-ac8a9d71-1598-4743-adcf-3a1d433c8ea6 .uagb-column__inner-wrap {
+			padding: 10px;
+		}
+
+		#uagb-columns-ac8a9d71-1598-4743-adcf-3a1d433c8ea6 .uagb-columns__shape-top .uagb-columns__shape-fill {
+			fill: #333;
+		}
+
+		#uagb-columns-ac8a9d71-1598-4743-adcf-3a1d433c8ea6 .uagb-columns__shape-bottom .uagb-columns__shape-fill {
+			fill: #333;
+		}
+
+		#uagb-adv-heading-7d145cb9-afd9-4701-a448-7e255aca0e94 .uagb-heading-text {
+			text-align: center;
+			margin-bottom: 15px;
+		}
+
+		#uagb-adv-heading-7d145cb9-afd9-4701-a448-7e255aca0e94 .uagb-separator-wrap {
+			text-align: center;
+		}
+
+		#uagb-adv-heading-7d145cb9-afd9-4701-a448-7e255aca0e94 .uagb-desc-text {
+			text-align: center;
+		}
+
+		#uagb-adv-heading-7d145cb9-afd9-4701-a448-7e255aca0e94 .uagb-separator {
+			border-top-style: solid;
+			margin-bottom: 15px;
+		}
+
+		#uagb-buttons-8b03b5ea-bbd2-4e32-bb5d-659f5dfd6daa .uagb-button__wrapper {
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+
+		#uagb-buttons-8b03b5ea-bbd2-4e32-bb5d-659f5dfd6daa .uagb-button__wrapper:first-child {
+			margin-left: 0;
+		}
+
+		#uagb-buttons-8b03b5ea-bbd2-4e32-bb5d-659f5dfd6daa .uagb-button__wrapper:last-child {
+			margin-right: 0;
+		}
+
+		#uagb-buttons-8b03b5ea-bbd2-4e32-bb5d-659f5dfd6daa .uagb-buttons__wrap {
+			justify-content: center;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+
+		#uagb-buttons-8b03b5ea-bbd2-4e32-bb5d-659f5dfd6daa .uagb-buttons-repeater-0 {
+			font-size: 20px;
+			line-height: em;
+			font-family: Padrão;
+			border-width: 0;
+			border-color: #333;
+			border-style: solid;
+			border-radius: 50px;
+			background: #1b676b;
+		}
+
+		#uagb-buttons-8b03b5ea-bbd2-4e32-bb5d-659f5dfd6daa .uagb-buttons-repeater-0:hover {
+			background: #00ab4f;
+			border-width: 0;
+			border-color: #333;
+			border-style: solid;
+		}
+
+		#uagb-buttons-8b03b5ea-bbd2-4e32-bb5d-659f5dfd6daa .uagb-buttons-repeater-0 a.uagb-button__link {
+			padding: 15px 60px;
+			color: #ffffff;
+		}
+
+		#uagb-buttons-8b03b5ea-bbd2-4e32-bb5d-659f5dfd6daa .uagb-buttons-repeater-0:hover a.uagb-button__link {
+			color: #ffffff;
+		}
+
+		#uagb-adv-heading-d1631322-3a1d-44f6-9447-a34009698584 .uagb-heading-text {
+			text-align: center;
+			margin-bottom: 15px;
+		}
+
+		#uagb-adv-heading-d1631322-3a1d-44f6-9447-a34009698584 .uagb-separator-wrap {
+			text-align: center;
+		}
+
+		#uagb-adv-heading-d1631322-3a1d-44f6-9447-a34009698584 .uagb-desc-text {
+			text-align: center;
+		}
+
+		#uagb-adv-heading-d1631322-3a1d-44f6-9447-a34009698584 .uagb-separator {
+			border-top-style: solid;
+			margin-bottom: 15px;
+		}
+
+		#uagb-buttons-27fec13f-f2ce-4b95-8054-a1c1e67bc820 .uagb-button__wrapper {
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+
+		#uagb-buttons-27fec13f-f2ce-4b95-8054-a1c1e67bc820 .uagb-button__wrapper:first-child {
+			margin-left: 0;
+		}
+
+		#uagb-buttons-27fec13f-f2ce-4b95-8054-a1c1e67bc820 .uagb-button__wrapper:last-child {
+			margin-right: 0;
+		}
+
+		#uagb-buttons-27fec13f-f2ce-4b95-8054-a1c1e67bc820 .uagb-buttons__wrap {
+			justify-content: center;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+
+		#uagb-buttons-27fec13f-f2ce-4b95-8054-a1c1e67bc820 .uagb-buttons-repeater-0 {
+			font-size: 20px;
+			line-height: em;
+			font-family: Padrão;
+			border-width: 0;
+			border-color: #333;
+			border-style: solid;
+			border-radius: 50px;
+			background: #1b676b;
+		}
+
+		#uagb-buttons-27fec13f-f2ce-4b95-8054-a1c1e67bc820 .uagb-buttons-repeater-0:hover {
+			background: #00ab4f;
+			border-width: 0;
+			border-color: #333;
+			border-style: solid;
+		}
+
+		#uagb-buttons-27fec13f-f2ce-4b95-8054-a1c1e67bc820 .uagb-buttons-repeater-0 a.uagb-button__link {
+			padding: 15px 60px;
+			color: #ffffff;
+		}
+
+		#uagb-buttons-27fec13f-f2ce-4b95-8054-a1c1e67bc820 .uagb-buttons-repeater-0:hover a.uagb-button__link {
+			color: #ffffff;
+		}
+
+		#uagb-adv-heading-185035e3-6ed1-4d86-93ff-68d24441acfa .uagb-heading-text {
+			text-align: center;
+			margin-bottom: 15px;
+		}
+
+		#uagb-adv-heading-185035e3-6ed1-4d86-93ff-68d24441acfa .uagb-separator-wrap {
+			text-align: center;
+		}
+
+		#uagb-adv-heading-185035e3-6ed1-4d86-93ff-68d24441acfa .uagb-desc-text {
+			text-align: center;
+		}
+
+		#uagb-adv-heading-185035e3-6ed1-4d86-93ff-68d24441acfa .uagb-separator {
+			border-top-style: solid;
+			margin-bottom: 15px;
+		}
+
+		#uagb-buttons-610faded-8aa2-44ca-9735-d299935e3aad .uagb-button__wrapper {
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+
+		#uagb-buttons-610faded-8aa2-44ca-9735-d299935e3aad .uagb-button__wrapper:first-child {
+			margin-left: 0;
+		}
+
+		#uagb-buttons-610faded-8aa2-44ca-9735-d299935e3aad .uagb-button__wrapper:last-child {
+			margin-right: 0;
+		}
+
+		#uagb-buttons-610faded-8aa2-44ca-9735-d299935e3aad .uagb-buttons__wrap {
+			justify-content: center;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+
+		#uagb-buttons-610faded-8aa2-44ca-9735-d299935e3aad .uagb-buttons-repeater-0 {
+			font-size: 20px;
+			line-height: em;
+			font-family: Padrão;
+			border-width: 0;
+			border-color: #333;
+			border-style: solid;
+			border-radius: 50px;
+			background: #1b676b;
+		}
+
+		#uagb-buttons-610faded-8aa2-44ca-9735-d299935e3aad .uagb-buttons-repeater-0:hover {
+			background: #00ab4f;
+			border-width: 0;
+			border-color: #333;
+			border-style: solid;
+		}
+
+		#uagb-buttons-610faded-8aa2-44ca-9735-d299935e3aad .uagb-buttons-repeater-0 a.uagb-button__link {
+			padding: 15px 60px;
+			color: #ffffff;
+		}
+
+		#uagb-buttons-610faded-8aa2-44ca-9735-d299935e3aad .uagb-buttons-repeater-0:hover a.uagb-button__link {
+			color: #ffffff;
+		}
+
+		#uagb-columns-6bb65192-3ee1-4ed6-81c6-ea9a9540fb84.uagb-columns__wrap {
+			padding-top: 50px;
+			padding-bottom: 0;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		#uagb-columns-6bb65192-3ee1-4ed6-81c6-ea9a9540fb84 .uagb-columns__video-wrap {
+			opacity: 0.5;
+		}
+
+		#uagb-columns-6bb65192-3ee1-4ed6-81c6-ea9a9540fb84>.uagb-columns__inner-wrap {
+			max-width: 1200px;
+		}
+
+		#uagb-columns-6bb65192-3ee1-4ed6-81c6-ea9a9540fb84 .uagb-column__inner-wrap {
+			padding: 10px;
+		}
+
+		#uagb-columns-6bb65192-3ee1-4ed6-81c6-ea9a9540fb84 .uagb-columns__shape-top .uagb-columns__shape-fill {
+			fill: #333;
+		}
+
+		#uagb-columns-6bb65192-3ee1-4ed6-81c6-ea9a9540fb84 .uagb-columns__shape-bottom .uagb-columns__shape-fill {
+			fill: #333;
+		}
+
+		#uagb-adv-heading-8a83fcc9-5ba5-44a1-a9aa-1a20ab78b7f4 .uagb-heading-text {
+			text-align: center;
+			margin-bottom: 15px;
+		}
+
+		#uagb-adv-heading-8a83fcc9-5ba5-44a1-a9aa-1a20ab78b7f4 .uagb-separator-wrap {
+			text-align: center;
+		}
+
+		#uagb-adv-heading-8a83fcc9-5ba5-44a1-a9aa-1a20ab78b7f4 .uagb-desc-text {
+			text-align: center;
+		}
+
+		#uagb-adv-heading-8a83fcc9-5ba5-44a1-a9aa-1a20ab78b7f4 .uagb-separator {
+			border-top-style: solid;
+			margin-bottom: 15px;
+		}
+
+		#uagb-buttons-1860adc6-d8d6-4e6a-a092-90762b657d33 .uagb-button__wrapper {
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+
+		#uagb-buttons-1860adc6-d8d6-4e6a-a092-90762b657d33 .uagb-button__wrapper:first-child {
+			margin-left: 0;
+		}
+
+		#uagb-buttons-1860adc6-d8d6-4e6a-a092-90762b657d33 .uagb-button__wrapper:last-child {
+			margin-right: 0;
+		}
+
+		#uagb-buttons-1860adc6-d8d6-4e6a-a092-90762b657d33 .uagb-buttons__wrap {
+			justify-content: center;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+
+		#uagb-buttons-1860adc6-d8d6-4e6a-a092-90762b657d33 .uagb-buttons-repeater-0 {
+			font-size: 20px;
+			line-height: em;
+			font-family: Padrão;
+			border-width: 0;
+			border-color: #333;
+			border-style: solid;
+			border-radius: 50px;
+			background: #1b676b;
+		}
+
+		#uagb-buttons-1860adc6-d8d6-4e6a-a092-90762b657d33 .uagb-buttons-repeater-0:hover {
+			background: #00ab4f;
+			border-width: 0;
+			border-color: #333;
+			border-style: solid;
+		}
+
+		#uagb-buttons-1860adc6-d8d6-4e6a-a092-90762b657d33 .uagb-buttons-repeater-0 a.uagb-button__link {
+			padding: 15px 60px;
+			color: #ffffff;
+		}
+
+		#uagb-buttons-1860adc6-d8d6-4e6a-a092-90762b657d33 .uagb-buttons-repeater-0:hover a.uagb-button__link {
+			color: #ffffff;
+		}
+
+		#uagb-adv-heading-ceeaecce-32e8-4ee7-86f6-78dca40b55a5 .uagb-heading-text {
+			text-align: center;
+			margin-bottom: 15px;
+		}
+
+		#uagb-adv-heading-ceeaecce-32e8-4ee7-86f6-78dca40b55a5 .uagb-separator-wrap {
+			text-align: center;
+		}
+
+		#uagb-adv-heading-ceeaecce-32e8-4ee7-86f6-78dca40b55a5 .uagb-desc-text {
+			text-align: center;
+		}
+
+		#uagb-adv-heading-ceeaecce-32e8-4ee7-86f6-78dca40b55a5 .uagb-separator {
+			border-top-style: solid;
+			margin-bottom: 15px;
+		}
+
+		#uagb-buttons-fa06f7dd-49f2-40de-af58-78a4841cf05b .uagb-button__wrapper {
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+
+		#uagb-buttons-fa06f7dd-49f2-40de-af58-78a4841cf05b .uagb-button__wrapper:first-child {
+			margin-left: 0;
+		}
+
+		#uagb-buttons-fa06f7dd-49f2-40de-af58-78a4841cf05b .uagb-button__wrapper:last-child {
+			margin-right: 0;
+		}
+
+		#uagb-buttons-fa06f7dd-49f2-40de-af58-78a4841cf05b .uagb-buttons__wrap {
+			justify-content: center;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+
+		#uagb-buttons-fa06f7dd-49f2-40de-af58-78a4841cf05b .uagb-buttons-repeater-0 {
+			font-size: 20px;
+			line-height: em;
+			font-family: Padrão;
+			border-width: 0;
+			border-color: #333;
+			border-style: solid;
+			border-radius: 50px;
+			background: #1b676b;
+		}
+
+		#uagb-buttons-fa06f7dd-49f2-40de-af58-78a4841cf05b .uagb-buttons-repeater-0:hover {
+			background: #00ab4f;
+			border-width: 0;
+			border-color: #333;
+			border-style: solid;
+		}
+
+		#uagb-buttons-fa06f7dd-49f2-40de-af58-78a4841cf05b .uagb-buttons-repeater-0 a.uagb-button__link {
+			padding: 15px 60px;
+			color: #fffbfb;
+		}
+
+		#uagb-buttons-fa06f7dd-49f2-40de-af58-78a4841cf05b .uagb-buttons-repeater-0:hover a.uagb-button__link {
+			color: #ffffff;
+		}
+
+		#uagb-adv-heading-ce978f63-a949-4ce9-8808-6ecaddcb87f7 .uagb-heading-text {
+			text-align: center;
+			margin-bottom: 15px;
+		}
+
+		#uagb-adv-heading-ce978f63-a949-4ce9-8808-6ecaddcb87f7 .uagb-separator-wrap {
+			text-align: center;
+		}
+
+		#uagb-adv-heading-ce978f63-a949-4ce9-8808-6ecaddcb87f7 .uagb-desc-text {
+			text-align: center;
+		}
+
+		#uagb-adv-heading-ce978f63-a949-4ce9-8808-6ecaddcb87f7 .uagb-separator {
+			border-top-style: solid;
+			margin-bottom: 15px;
+		}
+
+		#uagb-buttons-a2aaf17a-05d9-487f-9694-ed7ddb8407bc .uagb-button__wrapper {
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+
+		#uagb-buttons-a2aaf17a-05d9-487f-9694-ed7ddb8407bc .uagb-button__wrapper:first-child {
+			margin-left: 0;
+		}
+
+		#uagb-buttons-a2aaf17a-05d9-487f-9694-ed7ddb8407bc .uagb-button__wrapper:last-child {
+			margin-right: 0;
+		}
+
+		#uagb-buttons-a2aaf17a-05d9-487f-9694-ed7ddb8407bc .uagb-buttons__wrap {
+			justify-content: center;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+
+		#uagb-buttons-a2aaf17a-05d9-487f-9694-ed7ddb8407bc .uagb-buttons-repeater-0 {
+			font-size: 20px;
+			line-height: em;
+			font-family: Padrão;
+			border-width: 0;
+			border-color: #333;
+			border-style: solid;
+			border-radius: 50px;
+			background: #1b676b;
+		}
+
+		#uagb-buttons-a2aaf17a-05d9-487f-9694-ed7ddb8407bc .uagb-buttons-repeater-0:hover {
+			background: #00ab4f;
+			border-width: 0;
+			border-color: #333;
+			border-style: solid;
+		}
+
+		#uagb-buttons-a2aaf17a-05d9-487f-9694-ed7ddb8407bc .uagb-buttons-repeater-0 a.uagb-button__link {
+			padding: 15px 60px;
+			color: #ffffff;
+		}
+
+		#uagb-buttons-a2aaf17a-05d9-487f-9694-ed7ddb8407bc .uagb-buttons-repeater-0:hover a.uagb-button__link {
+			color: #ffffff;
+		}
+
+		#uagb-section-f7b9be2e-60ea-46f0-b63e-d275c6c7c127.uagb-section__wrap {
+			padding-top: 100px;
+			padding-bottom: 100px;
+			padding-left: 20px;
+			padding-right: 20px;
+			margin-right: auto;
+			margin-left: auto;
+			max-width: 100%;
+		}
+
+		#uagb-section-f7b9be2e-60ea-46f0-b63e-d275c6c7c127>.uagb-section__video-wrap {
+			opacity: 0.5;
+		}
+
+		#uagb-section-f7b9be2e-60ea-46f0-b63e-d275c6c7c127>.uagb-section__inner-wrap {
+			max-width: 1200px;
+		}
+
+		#uagb-section-f7b9be2e-60ea-46f0-b63e-d275c6c7c127>.uagb-section__overlay {
+			background-color: #eeeeee;
+		}
+
+		#uagb-columns-7d6adf79-6936-4fe4-9342-fdc38342739f.uagb-columns__wrap {
+			padding-top: 50px;
+			padding-bottom: 0;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		#uagb-columns-7d6adf79-6936-4fe4-9342-fdc38342739f .uagb-columns__video-wrap {
+			opacity: 0.5;
+		}
+
+		#uagb-columns-7d6adf79-6936-4fe4-9342-fdc38342739f>.uagb-columns__inner-wrap {
+			max-width: 1200px;
+		}
+
+		#uagb-columns-7d6adf79-6936-4fe4-9342-fdc38342739f .uagb-column__inner-wrap {
+			padding: 10px;
+		}
+
+		#uagb-columns-7d6adf79-6936-4fe4-9342-fdc38342739f .uagb-columns__shape-top .uagb-columns__shape-fill {
+			fill: #333;
+		}
+
+		#uagb-columns-7d6adf79-6936-4fe4-9342-fdc38342739f .uagb-columns__shape-bottom .uagb-columns__shape-fill {
+			fill: #333;
+		}
+
+		#uagb-team-5ed69897-a891-4fa1-b7ca-e5ac67e6b7bf p.uagb-team__desc {
+			font-size: 15px;
+			margin-bottom: 10px;
+		}
+
+		#uagb-team-5ed69897-a891-4fa1-b7ca-e5ac67e6b7bf .uagb-team__prefix {
+			font-size: 15px;
+			color: #888888;
+		}
+
+		#uagb-team-5ed69897-a891-4fa1-b7ca-e5ac67e6b7bf .uagb-team__social-icon a {
+			color: #333;
+			font-size: 20px;
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+		}
+
+		#uagb-team-5ed69897-a891-4fa1-b7ca-e5ac67e6b7bf .uagb-team__social-icon svg {
+			fill: #333;
+			width: 20px;
+			height: 20px;
+		}
+
+		#uagb-team-5ed69897-a891-4fa1-b7ca-e5ac67e6b7bf.uagb-team__image-position-left .uagb-team__social-icon {
+			margin-right: 20px;
+		}
+
+		#uagb-team-5ed69897-a891-4fa1-b7ca-e5ac67e6b7bf.uagb-team__image-position-right .uagb-team__social-icon {
+			margin-left: 20px;
+		}
+
+		#uagb-team-5ed69897-a891-4fa1-b7ca-e5ac67e6b7bf.uagb-team__image-position-above.uagb-team__align-center .uagb-team__social-icon {
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+
+		#uagb-team-5ed69897-a891-4fa1-b7ca-e5ac67e6b7bf.uagb-team__image-position-above.uagb-team__align-left .uagb-team__social-icon {
+			margin-right: 20px;
+		}
+
+		#uagb-team-5ed69897-a891-4fa1-b7ca-e5ac67e6b7bf.uagb-team__image-position-above.uagb-team__align-right .uagb-team__social-icon {
+			margin-left: 20px;
+		}
+
+		#uagb-team-5ed69897-a891-4fa1-b7ca-e5ac67e6b7bf .uagb-team__image-wrap {
+			margin-top: 15px;
+			margin-bottom: 15px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 150px;
+		}
+
+		#uagb-team-6fc57466-a143-4483-875e-5e213cfd02d2 p.uagb-team__desc {
+			font-size: 15px;
+			margin-bottom: 10px;
+		}
+
+		#uagb-team-6fc57466-a143-4483-875e-5e213cfd02d2 .uagb-team__prefix {
+			font-size: 15px;
+			color: #888888;
+		}
+
+		#uagb-team-6fc57466-a143-4483-875e-5e213cfd02d2 .uagb-team__social-icon a {
+			color: #333;
+			font-size: 20px;
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+		}
+
+		#uagb-team-6fc57466-a143-4483-875e-5e213cfd02d2 .uagb-team__social-icon svg {
+			fill: #333;
+			width: 20px;
+			height: 20px;
+		}
+
+		#uagb-team-6fc57466-a143-4483-875e-5e213cfd02d2.uagb-team__image-position-left .uagb-team__social-icon {
+			margin-right: 20px;
+		}
+
+		#uagb-team-6fc57466-a143-4483-875e-5e213cfd02d2.uagb-team__image-position-right .uagb-team__social-icon {
+			margin-left: 20px;
+		}
+
+		#uagb-team-6fc57466-a143-4483-875e-5e213cfd02d2.uagb-team__image-position-above.uagb-team__align-center .uagb-team__social-icon {
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+
+		#uagb-team-6fc57466-a143-4483-875e-5e213cfd02d2.uagb-team__image-position-above.uagb-team__align-left .uagb-team__social-icon {
+			margin-right: 20px;
+		}
+
+		#uagb-team-6fc57466-a143-4483-875e-5e213cfd02d2.uagb-team__image-position-above.uagb-team__align-right .uagb-team__social-icon {
+			margin-left: 20px;
+		}
+
+		#uagb-team-6fc57466-a143-4483-875e-5e213cfd02d2 .uagb-team__image-wrap {
+			margin-top: 15px;
+			margin-bottom: 15px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 150px;
+		}
+
+		#uagb-columns-c7ccd42e-a640-4e41-a2e0-e96632a43ed2.uagb-columns__wrap {
+			padding-top: 0;
+			padding-bottom: 0;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		#uagb-columns-c7ccd42e-a640-4e41-a2e0-e96632a43ed2 .uagb-columns__video-wrap {
+			opacity: 0.5;
+		}
+
+		#uagb-columns-c7ccd42e-a640-4e41-a2e0-e96632a43ed2>.uagb-columns__inner-wrap {
+			max-width: 1200px;
+		}
+
+		#uagb-columns-c7ccd42e-a640-4e41-a2e0-e96632a43ed2 .uagb-column__inner-wrap {
+			padding: 10px;
+		}
+
+		#uagb-columns-c7ccd42e-a640-4e41-a2e0-e96632a43ed2 .uagb-columns__shape-top .uagb-columns__shape-fill {
+			fill: #333;
+		}
+
+		#uagb-columns-c7ccd42e-a640-4e41-a2e0-e96632a43ed2 .uagb-columns__shape-bottom .uagb-columns__shape-fill {
+			fill: #333;
+		}
+
+		#uagb-team-0be82362-2595-4def-9ae6-3114a2a3f616 p.uagb-team__desc {
+			font-size: 15px;
+			margin-bottom: 10px;
+		}
+
+		#uagb-team-0be82362-2595-4def-9ae6-3114a2a3f616 .uagb-team__prefix {
+			font-size: 15px;
+			color: #888888;
+		}
+
+		#uagb-team-0be82362-2595-4def-9ae6-3114a2a3f616 .uagb-team__social-icon a {
+			color: #333;
+			font-size: 20px;
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+		}
+
+		#uagb-team-0be82362-2595-4def-9ae6-3114a2a3f616 .uagb-team__social-icon svg {
+			fill: #333;
+			width: 20px;
+			height: 20px;
+		}
+
+		#uagb-team-0be82362-2595-4def-9ae6-3114a2a3f616.uagb-team__image-position-left .uagb-team__social-icon {
+			margin-right: 20px;
+		}
+
+		#uagb-team-0be82362-2595-4def-9ae6-3114a2a3f616.uagb-team__image-position-right .uagb-team__social-icon {
+			margin-left: 20px;
+		}
+
+		#uagb-team-0be82362-2595-4def-9ae6-3114a2a3f616.uagb-team__image-position-above.uagb-team__align-center .uagb-team__social-icon {
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+
+		#uagb-team-0be82362-2595-4def-9ae6-3114a2a3f616.uagb-team__image-position-above.uagb-team__align-left .uagb-team__social-icon {
+			margin-right: 20px;
+		}
+
+		#uagb-team-0be82362-2595-4def-9ae6-3114a2a3f616.uagb-team__image-position-above.uagb-team__align-right .uagb-team__social-icon {
+			margin-left: 20px;
+		}
+
+		#uagb-team-0be82362-2595-4def-9ae6-3114a2a3f616 .uagb-team__image-wrap {
+			margin-top: 15px;
+			margin-bottom: 15px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 150px;
+		}
+
+		#uagb-team-e5e25461-6aef-4350-a42e-a9894150f522 p.uagb-team__desc {
+			font-size: 15px;
+			margin-bottom: 10px;
+		}
+
+		#uagb-team-e5e25461-6aef-4350-a42e-a9894150f522 .uagb-team__prefix {
+			font-size: 15px;
+			color: #888888;
+		}
+
+		#uagb-team-e5e25461-6aef-4350-a42e-a9894150f522 .uagb-team__social-icon a {
+			color: #333;
+			font-size: 20px;
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+		}
+
+		#uagb-team-e5e25461-6aef-4350-a42e-a9894150f522 .uagb-team__social-icon svg {
+			fill: #333;
+			width: 20px;
+			height: 20px;
+		}
+
+		#uagb-team-e5e25461-6aef-4350-a42e-a9894150f522.uagb-team__image-position-left .uagb-team__social-icon {
+			margin-right: 20px;
+		}
+
+		#uagb-team-e5e25461-6aef-4350-a42e-a9894150f522.uagb-team__image-position-right .uagb-team__social-icon {
+			margin-left: 20px;
+		}
+
+		#uagb-team-e5e25461-6aef-4350-a42e-a9894150f522.uagb-team__image-position-above.uagb-team__align-center .uagb-team__social-icon {
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+
+		#uagb-team-e5e25461-6aef-4350-a42e-a9894150f522.uagb-team__image-position-above.uagb-team__align-left .uagb-team__social-icon {
+			margin-right: 20px;
+		}
+
+		#uagb-team-e5e25461-6aef-4350-a42e-a9894150f522.uagb-team__image-position-above.uagb-team__align-right .uagb-team__social-icon {
+			margin-left: 20px;
+		}
+
+		#uagb-team-e5e25461-6aef-4350-a42e-a9894150f522 .uagb-team__image-wrap {
+			margin-top: 15px;
+			margin-bottom: 15px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 150px;
+		}
+
+		#uagb-columns-ac7b6180-03ca-42e9-b1a4-df8253a621b0.uagb-columns__wrap {
+			padding-top: 0;
+			padding-bottom: 0;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		#uagb-columns-ac7b6180-03ca-42e9-b1a4-df8253a621b0 .uagb-columns__video-wrap {
+			opacity: 0.5;
+		}
+
+		#uagb-columns-ac7b6180-03ca-42e9-b1a4-df8253a621b0>.uagb-columns__inner-wrap {
+			max-width: 1200px;
+		}
+
+		#uagb-columns-ac7b6180-03ca-42e9-b1a4-df8253a621b0 .uagb-column__inner-wrap {
+			padding: 10px;
+		}
+
+		#uagb-columns-ac7b6180-03ca-42e9-b1a4-df8253a621b0 .uagb-columns__shape-top .uagb-columns__shape-fill {
+			fill: #333;
+		}
+
+		#uagb-columns-ac7b6180-03ca-42e9-b1a4-df8253a621b0 .uagb-columns__shape-bottom .uagb-columns__shape-fill {
+			fill: #333;
+		}
+
+		#uagb-team-d8e44b63-473a-4090-91ce-4e36dbe1fb57 p.uagb-team__desc {
+			font-size: 15px;
+			margin-bottom: 10px;
+		}
+
+		#uagb-team-d8e44b63-473a-4090-91ce-4e36dbe1fb57 .uagb-team__prefix {
+			font-size: 15px;
+			color: #888888;
+		}
+
+		#uagb-team-d8e44b63-473a-4090-91ce-4e36dbe1fb57 .uagb-team__social-icon a {
+			color: #333;
+			font-size: 20px;
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+		}
+
+		#uagb-team-d8e44b63-473a-4090-91ce-4e36dbe1fb57 .uagb-team__social-icon svg {
+			fill: #333;
+			width: 20px;
+			height: 20px;
+		}
+
+		#uagb-team-d8e44b63-473a-4090-91ce-4e36dbe1fb57.uagb-team__image-position-left .uagb-team__social-icon {
+			margin-right: 20px;
+		}
+
+		#uagb-team-d8e44b63-473a-4090-91ce-4e36dbe1fb57.uagb-team__image-position-right .uagb-team__social-icon {
+			margin-left: 20px;
+		}
+
+		#uagb-team-d8e44b63-473a-4090-91ce-4e36dbe1fb57.uagb-team__image-position-above.uagb-team__align-center .uagb-team__social-icon {
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+
+		#uagb-team-d8e44b63-473a-4090-91ce-4e36dbe1fb57.uagb-team__image-position-above.uagb-team__align-left .uagb-team__social-icon {
+			margin-right: 20px;
+		}
+
+		#uagb-team-d8e44b63-473a-4090-91ce-4e36dbe1fb57.uagb-team__image-position-above.uagb-team__align-right .uagb-team__social-icon {
+			margin-left: 20px;
+		}
+
+		#uagb-team-d8e44b63-473a-4090-91ce-4e36dbe1fb57 .uagb-team__image-wrap {
+			margin-top: 15px;
+			margin-bottom: 15px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 150px;
+		}
+
+		#uagb-team-029d77e5-ba96-4b14-86c4-86edd9cf4860 p.uagb-team__desc {
+			font-size: 15px;
+			margin-bottom: 10px;
+		}
+
+		#uagb-team-029d77e5-ba96-4b14-86c4-86edd9cf4860 .uagb-team__prefix {
+			font-size: 15px;
+			color: #888888;
+		}
+
+		#uagb-team-029d77e5-ba96-4b14-86c4-86edd9cf4860 .uagb-team__social-icon a {
+			color: #333;
+			font-size: 20px;
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+		}
+
+		#uagb-team-029d77e5-ba96-4b14-86c4-86edd9cf4860 .uagb-team__social-icon svg {
+			fill: #333;
+			width: 20px;
+			height: 20px;
+		}
+
+		#uagb-team-029d77e5-ba96-4b14-86c4-86edd9cf4860.uagb-team__image-position-left .uagb-team__social-icon {
+			margin-right: 20px;
+		}
+
+		#uagb-team-029d77e5-ba96-4b14-86c4-86edd9cf4860.uagb-team__image-position-right .uagb-team__social-icon {
+			margin-left: 20px;
+		}
+
+		#uagb-team-029d77e5-ba96-4b14-86c4-86edd9cf4860.uagb-team__image-position-above.uagb-team__align-center .uagb-team__social-icon {
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+
+		#uagb-team-029d77e5-ba96-4b14-86c4-86edd9cf4860.uagb-team__image-position-above.uagb-team__align-left .uagb-team__social-icon {
+			margin-right: 20px;
+		}
+
+		#uagb-team-029d77e5-ba96-4b14-86c4-86edd9cf4860.uagb-team__image-position-above.uagb-team__align-right .uagb-team__social-icon {
+			margin-left: 20px;
+		}
+
+		#uagb-team-029d77e5-ba96-4b14-86c4-86edd9cf4860 .uagb-team__image-wrap {
+			margin-top: 15px;
+			margin-bottom: 15px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 150px;
+		}
+
+		#uagb-columns-e02bd414-73dd-42f2-9e57-c88406da2c89.uagb-columns__wrap {
+			padding-top: 0;
+			padding-bottom: 0;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		#uagb-columns-e02bd414-73dd-42f2-9e57-c88406da2c89 .uagb-columns__video-wrap {
+			opacity: 0.5;
+		}
+
+		#uagb-columns-e02bd414-73dd-42f2-9e57-c88406da2c89>.uagb-columns__inner-wrap {
+			max-width: 1200px;
+		}
+
+		#uagb-columns-e02bd414-73dd-42f2-9e57-c88406da2c89 .uagb-column__inner-wrap {
+			padding: 10px;
+		}
+
+		#uagb-columns-e02bd414-73dd-42f2-9e57-c88406da2c89 .uagb-columns__shape-top .uagb-columns__shape-fill {
+			fill: #333;
+		}
+
+		#uagb-columns-e02bd414-73dd-42f2-9e57-c88406da2c89 .uagb-columns__shape-bottom .uagb-columns__shape-fill {
+			fill: #333;
+		}
+
+		#uagb-team-4dfb1d63-765c-4da6-9fcf-25bb6992d1dd p.uagb-team__desc {
+			font-size: 15px;
+			margin-bottom: 10px;
+		}
+
+		#uagb-team-4dfb1d63-765c-4da6-9fcf-25bb6992d1dd .uagb-team__prefix {
+			font-size: 15px;
+			color: #888888;
+		}
+
+		#uagb-team-4dfb1d63-765c-4da6-9fcf-25bb6992d1dd .uagb-team__social-icon a {
+			color: #333;
+			font-size: 20px;
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+		}
+
+		#uagb-team-4dfb1d63-765c-4da6-9fcf-25bb6992d1dd .uagb-team__social-icon svg {
+			fill: #333;
+			width: 20px;
+			height: 20px;
+		}
+
+		#uagb-team-4dfb1d63-765c-4da6-9fcf-25bb6992d1dd.uagb-team__image-position-left .uagb-team__social-icon {
+			margin-right: 20px;
+		}
+
+		#uagb-team-4dfb1d63-765c-4da6-9fcf-25bb6992d1dd.uagb-team__image-position-right .uagb-team__social-icon {
+			margin-left: 20px;
+		}
+
+		#uagb-team-4dfb1d63-765c-4da6-9fcf-25bb6992d1dd.uagb-team__image-position-above.uagb-team__align-center .uagb-team__social-icon {
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+
+		#uagb-team-4dfb1d63-765c-4da6-9fcf-25bb6992d1dd.uagb-team__image-position-above.uagb-team__align-left .uagb-team__social-icon {
+			margin-right: 20px;
+		}
+
+		#uagb-team-4dfb1d63-765c-4da6-9fcf-25bb6992d1dd.uagb-team__image-position-above.uagb-team__align-right .uagb-team__social-icon {
+			margin-left: 20px;
+		}
+
+		#uagb-team-4dfb1d63-765c-4da6-9fcf-25bb6992d1dd .uagb-team__image-wrap {
+			margin-top: 15px;
+			margin-bottom: 15px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 150px;
+		}
+
+		#uagb-team-4b8076fb-51e7-4b33-8223-222ce9f3bc22 p.uagb-team__desc {
+			font-size: 15px;
+			margin-bottom: 10px;
+		}
+
+		#uagb-team-4b8076fb-51e7-4b33-8223-222ce9f3bc22 .uagb-team__prefix {
+			font-size: 15px;
+			color: #888888;
+		}
+
+		#uagb-team-4b8076fb-51e7-4b33-8223-222ce9f3bc22 .uagb-team__social-icon a {
+			color: #333;
+			font-size: 20px;
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+		}
+
+		#uagb-team-4b8076fb-51e7-4b33-8223-222ce9f3bc22 .uagb-team__social-icon svg {
+			fill: #333;
+			width: 20px;
+			height: 20px;
+		}
+
+		#uagb-team-4b8076fb-51e7-4b33-8223-222ce9f3bc22.uagb-team__image-position-left .uagb-team__social-icon {
+			margin-right: 20px;
+		}
+
+		#uagb-team-4b8076fb-51e7-4b33-8223-222ce9f3bc22.uagb-team__image-position-right .uagb-team__social-icon {
+			margin-left: 20px;
+		}
+
+		#uagb-team-4b8076fb-51e7-4b33-8223-222ce9f3bc22.uagb-team__image-position-above.uagb-team__align-center .uagb-team__social-icon {
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+
+		#uagb-team-4b8076fb-51e7-4b33-8223-222ce9f3bc22.uagb-team__image-position-above.uagb-team__align-left .uagb-team__social-icon {
+			margin-right: 20px;
+		}
+
+		#uagb-team-4b8076fb-51e7-4b33-8223-222ce9f3bc22.uagb-team__image-position-above.uagb-team__align-right .uagb-team__social-icon {
+			margin-left: 20px;
+		}
+
+		#uagb-team-4b8076fb-51e7-4b33-8223-222ce9f3bc22 .uagb-team__image-wrap {
+			margin-top: 15px;
+			margin-bottom: 15px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 150px;
+		}
+
+		@media only screen and (max-width: 767px) {
+			#uagb-post__carousel-0572725f-142e-45d2-a081-ad27cd2256f8 .uagb-post__text {
+				padding: px;
+			}
+		}
+	</style>
+	<link rel="icon"
+		href="logo_gpds-1-150x150.png"
+		sizes="32x32">
+	<link rel="icon"
+		href="logo_gpds-1-300x300.png"
+		sizes="192x192">
+	<link rel="apple-touch-icon-precomposed"
+		href="logo_gpds-1-300x300.png">
+	<meta name="msapplication-TileImage"
+		content="logo_gpds-1-300x300.png">
+	<style id="wp-custom-css">
+		.full-height {
+			height: 100vh !important;
+			display: flex;
+			align-items: center;
+		}
+
+		a:focus {
+			border: none;
+			outline: none !important;
+		}
+	</style>
+</head>
+
+<body itemtype="https://schema.org/WebPage" itemscope="itemscope"
+	class="home page-template-default page page-id-7 wp-custom-logo mt-7 mt-page-home ast-desktop ast-page-builder-template ast-no-sidebar astra-2.1.4 ast-header-custom-item-inside ast-single-post ast-mobile-inherit-site-logo ast-inherit-site-logo-transparent ast-theme-transparent-header"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+	<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+	<div class="hfeed site" id="page">
+		<a class="skip-link screen-reader-text _mPS2id-h mPS2id-highlight mPS2id-highlight-first mPS2id-highlight-last"
+			href="#content">Ir para o conteúdo</a>
+
+
+
+		<header
+			class="site-header ast-primary-submenu-animation-fade header-main-layout-1 ast-primary-menu-enabled ast-logo-title-inline ast-hide-custom-menu-mobile ast-menu-toggle-icon ast-mobile-header-inline"
+			id="masthead" role="banner" itemtype="https://schema.org/WPHeader" itemscope="itemscope">
+
+
+
+			<div id="mysticky-wrap" style="">
+				<div id="mysticky-nav" style="top: 0px;" class="up">
+					<div class="main-header-bar-wrap" style="">
+						<div class="main-header-bar">
+							<div class="ast-container">
+
+								<div class="ast-flex main-header-container">
+
+									<div class="site-branding">
+										<div class="ast-site-identity" itemtype="https://schema.org/Organization"
+											itemscope="itemscope">
+											<span class="site-logo-img"><a
+													href="#"
+													class="custom-logo-link" rel="home"><img
+														src="GPADS_arquivos/cropped-logo_gpds-1.png" class="custom-logo"
+														alt="GPADS" width="330" height="330"></a></span>
+											<div class="ast-site-title-wrap">
+												<h1 class="site-title" itemprop="name">
+													<a href="#"
+														rel="home" itemprop="url">
+														GPADS
+													</a>
+												</h1>
+
+											</div>
+										</div>
+									</div>
+
+									<!-- .site-branding -->
+									<div class="ast-mobile-menu-buttons">
+
+
+										<div class="ast-button-wrap">
+											<button type="button"
+												class="menu-toggle main-header-menu-toggle ast-mobile-menu-buttons-fill"
+												aria-controls="primary-menu" aria-expanded="false" data-index="0">
+												<span class="screen-reader-text">Menu</span>
+												<span class="menu-toggle-icon"></span>
+
+												<span class="mobile-menu-wrap">
+													<span class="mobile-menu">Menu</span>
+												</span>
+
+											</button>
+										</div>
+
+
+									</div>
+									<div class="ast-main-header-bar-alignment">
+										<div class="main-header-bar-navigation">
+											<nav class="site-navigation" id="site-navigation"
+												itemtype="https://schema.org/SiteNavigationElement"
+												itemscope="itemscope" aria-label="Site Navigation">
+												<div class="main-navigation">
+													<ul id="primary-menu"
+														class="main-header-menu ast-nav-menu ast-flex ast-justify-content-flex-end  submenu-with-border astra-menu-animation-fade ">
+														<li id="menu-item-222"
+															class="menu-item menu-item-type-custom menu-item-object-custom menu-item-222">
+															<a href="#sobre" data-ps2id-api="true"
+																class="_mPS2id-h">Sobre</a></li>
+														<li id="menu-item-223"
+															class="menu-item menu-item-type-custom menu-item-object-custom menu-item-223">
+															<a href="#noticias" data-ps2id-api="true"
+																class="_mPS2id-h">Notícias</a></li>
+														<li id="menu-item-224"
+															class="menu-item menu-item-type-custom menu-item-object-custom menu-item-224">
+															<a href="#projetos" data-ps2id-api="true"
+																class="_mPS2id-h">Projetos</a></li>
+														<li id="menu-item-225"
+															class="menu-item menu-item-type-custom menu-item-object-custom menu-item-225">
+															<a href="#equipe" data-ps2id-api="true"
+																class="_mPS2id-h">Equipe</a></li>
+													</ul>
+												</div>
+											</nav>
+										</div>
+									</div>
+								</div><!-- Main Header Container -->
+							</div><!-- ast-row -->
+						</div> <!-- Main Header Bar -->
+					</div>
+				</div>
+			</div> <!-- Main Header Bar Wrap -->
+
+
+		</header><!-- #masthead -->
+
+
+
+
+		<div id="content" class="site-content _mPS2id-t mPS2id-target mPS2id-target-first mPS2id-target-last">
+
+			<div class="ast-container">
+
+
+
+				<div id="primary" class="content-area primary">
+
+
+					<main id="main" class="site-main">
+
+
+
+
+
+						<article class="post-7 page type-page status-publish ast-article-single" id="post-7"
+							itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
+
+
+							<header class="entry-header ast-header-without-markup">
+
+
+							</header><!-- .entry-header -->
+
+							<div class="entry-content clear" itemprop="text">
+
+
+
+								<section
+									class="wp-block-uagb-section uagb-section__wrap uagb-section__background-image full-height"
+									id="uagb-section-8d9ebfac-38d3-457b-b17b-8d38135187da">
+									<div class="uagb-section__overlay"></div>
+									<div class="uagb-section__inner-wrap">
+										<div class="uagb-infobox__outer-wrap"
+											id="uagb-infobox-85956b60-bfce-4ce6-800c-95f1062f20fe">
+											<div
+												class="uagb-infobox__content-wrap uagb-infobox uagb-infobox-has-icon uagb-infobox-icon-above-title uagb-infobox-image-valign-top uagb-infobox-enable-border-radius ">
+												<div class="uagb-ifb-left-right-wrap">
+													<div class="uagb-ifb-content">
+														<div class="uagb-ifb-title-wrap">
+															<h3 class="uagb-ifb-title">GPADS</h3>
+														</div>
+														<div class="uagb-ifb-text-wrap">
+															<p class="uagb-ifb-desc">Grupo de Pesquisa em Análise e
+																Desenvolvimento de Sistemas</p>
+															<div class="uagb-ifb-cta uagb-infobox-cta-link-style">
+																<div class="uagb-ifb-button-wrapper"><a href="#sobre"
+																		class="uagb-infobox-cta-link uagb-ifb-cta-button _mPS2id-h"
+																		target="_self" rel="noopener noreferrer"><span
+																			class="uagb-ifb-cta-content-wrapper"><span
+																				class="uagb-inline-editing ">Conheça</span></span></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+
+										<p></p>
+									</div>
+								</section>
+
+
+								<a id="sobre" data-ps2id-target="" class="_mPS2id-t"></a>
+
+
+
+								<section
+									class="wp-block-uagb-section uagb-section__wrap uagb-section__background-undefined"
+									id="uagb-section-efee3c08-2249-4147-9beb-4b9ac4677ef1">
+									<div class="uagb-section__overlay"></div>
+									<div class="uagb-section__inner-wrap">
+										<h1 class="has-text-align-center">Sobre</h1>
+
+
+
+										<section
+											class="wp-block-uagb-columns uagb-columns__wrap uagb-columns__background-undefined uagb-columns__stack-mobile uagb-columns__valign-top uagb-columns__gap-10 alignundefined"
+											id="uagb-columns-41b02c3c-edf4-44c4-86c7-b855524e4e6e">
+											<div class="uagb-columns__overlay"></div>
+											<div class="uagb-columns__inner-wrap uagb-columns__columns-3">
+												<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined"
+													id="uagb-column-c336d600-7e03-44db-a454-ef20bd13bcf3">
+													<div class="uagb-column__overlay"></div>
+													<div class="uagb-column__inner-wrap">
+														<div class="wp-block-uagb-icon-list uagb-icon-list__outer-wrap uagb-icon-list__layout-vertical uagb-icon-list__no-label"
+															id="uagb-icon-list-916ceac8-d64e-4440-bba9-ea1705917e25">
+															<div class="uagb-icon-list__wrap"><a
+																	class="uagb-icon-list-repeater-0 uagb-icon-list__wrapper"
+																	target="_self" rel="noopener noreferrer"
+																	href="https://web.archive.org/web/20230214165204/http://gpads.recife.ifpe.edu.br/">
+																	<div class="uagb-icon-list__content-wrap"><span
+																			class="uagb-icon-list__source-wrap"><span
+																				class="uagb-icon-list__source-icon"><svg
+																					xmlns="http://www.w3.org/2000/svg"
+																					viewBox="0 0 640 512">
+																					<path
+																						d="M634.91 154.88C457.74-8.99 182.19-8.93 5.09 154.88c-6.66 6.16-6.79 16.59-.35 22.98l34.24 33.97c6.14 6.1 16.02 6.23 22.4.38 145.92-133.68 371.3-133.71 517.25 0 6.38 5.85 16.26 5.71 22.4-.38l34.24-33.97c6.43-6.39 6.3-16.82-.36-22.98zM320 352c-35.35 0-64 28.65-64 64s28.65 64 64 64 64-28.65 64-64-28.65-64-64-64zm202.67-83.59c-115.26-101.93-290.21-101.82-405.34 0-6.9 6.1-7.12 16.69-.57 23.15l34.44 33.99c6 5.92 15.66 6.32 22.05.8 83.95-72.57 209.74-72.41 293.49 0 6.39 5.52 16.05 5.13 22.05-.8l34.44-33.99c6.56-6.46 6.33-17.06-.56-23.15z">
+																					</path>
+																				</svg></span></span></div>
+																</a></div>
+														</div>
+
+
+
+														<div style="height:30px" aria-hidden="true"
+															class="wp-block-spacer"></div>
+
+
+
+														<div class="wp-block-uagb-advanced-heading"
+															id="uagb-adv-heading-153abd72-3c8d-4447-9034-62c453e78a72">
+															<h2 class="uagb-heading-text">IoT</h2>
+															<p class="uagb-desc-text">
+
+																Internet das Coisas pode ser definida como a comunicação
+																máquina à
+																máquina via Internet, permitindo que diferentes objetos
+																compartilhe
+																dados e informações para concluir determidadas tarefas,
+																podem ser
+																aplicada em diversos setores e áreas para otimizar a
+																atividades e
+																facilitar a vida dos cidadãos.
+
+															</p>
+														</div>
+													</div>
+												</div>
+
+
+
+												<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined"
+													id="uagb-column-f1b54a64-50ef-48a3-87b3-b5245444e839">
+													<div class="uagb-column__overlay"></div>
+													<div class="uagb-column__inner-wrap">
+														<div class="wp-block-uagb-icon-list uagb-icon-list__outer-wrap uagb-icon-list__layout-vertical uagb-icon-list__no-label"
+															id="uagb-icon-list-b9223968-25c0-435e-bae2-eac5ba11b871">
+															<div class="uagb-icon-list__wrap"><a
+																	class="uagb-icon-list-repeater-0 uagb-icon-list__wrapper"
+																	target="_self" rel="noopener noreferrer"
+																	href="#">
+																	<div class="uagb-icon-list__content-wrap"><span
+																			class="uagb-icon-list__source-wrap"><span
+																				class="uagb-icon-list__source-icon"><svg
+																					xmlns="http://www.w3.org/2000/svg"
+																					viewBox="0 0 512 512">
+																					<path
+																						d="M416 48v416c0 26.51-21.49 48-48 48H144c-26.51 0-48-21.49-48-48V48c0-26.51 21.49-48 48-48h224c26.51 0 48 21.49 48 48zm96 58v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42V88h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zm0 96v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42v-48h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zm0 96v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42v-48h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zm0 96v12a6 6 0 0 1-6 6h-18v6a6 6 0 0 1-6 6h-42v-48h42a6 6 0 0 1 6 6v6h18a6 6 0 0 1 6 6zM30 376h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6zm0-96h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6zm0-96h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6zm0-96h42v48H30a6 6 0 0 1-6-6v-6H6a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6h18v-6a6 6 0 0 1 6-6z">
+																					</path>
+																				</svg></span></span></div>
+																</a></div>
+														</div>
+
+
+
+														<div style="height:30px" aria-hidden="true"
+															class="wp-block-spacer"></div>
+
+
+
+														<div class="wp-block-uagb-advanced-heading"
+															id="uagb-adv-heading-888d57a7-1528-4193-9d0f-707c5f70935c">
+															<h2 class="uagb-heading-text">Sistemas Embarcados</h2>
+															<p class="uagb-desc-text">
+
+																Sistemas embarcados revolucionam o mundo continuamente
+																melhorando a vida
+																das pessoas. Hoje, eles estão em todos os lugares e suas
+																aplicações
+																impulsionam o desenvolvimento tecnológico de todas as
+																áreas de
+																conhecimento humano. Eles podem ser definidos como
+																computadores
+																desenvolvidos para um propósito único, ao invés de
+																prover um sistema
+																operacional generalizado.
+
+															</p>
+														</div>
+													</div>
+												</div>
+
+
+
+												<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined"
+													id="uagb-column-14dd53bf-6486-4d9a-befc-91ac844252b3">
+													<div class="uagb-column__overlay"></div>
+													<div class="uagb-column__inner-wrap">
+														<div class="wp-block-uagb-icon-list uagb-icon-list__outer-wrap uagb-icon-list__layout-vertical uagb-icon-list__no-label"
+															id="uagb-icon-list-b77bc6b9-5c9a-4c03-b8d1-9cd7ee88b792">
+															<div class="uagb-icon-list__wrap"><a
+																	class="uagb-icon-list-repeater-0 uagb-icon-list__wrapper"
+																	target="_self" rel="noopener noreferrer"
+																	href="https://web.archive.org/web/20230214165204/http://gpads.recife.ifpe.edu.br/">
+																	<div class="uagb-icon-list__content-wrap"><span
+																			class="uagb-icon-list__source-wrap"><span
+																				class="uagb-icon-list__source-icon"><svg
+																					xmlns="http://www.w3.org/2000/svg"
+																					viewBox="0 0 448 512">
+																					<path
+																						d="M448 73.143v45.714C448 159.143 347.667 192 224 192S0 159.143 0 118.857V73.143C0 32.857 100.333 0 224 0s224 32.857 224 73.143zM448 176v102.857C448 319.143 347.667 352 224 352S0 319.143 0 278.857V176c48.125 33.143 136.208 48.572 224 48.572S399.874 209.143 448 176zm0 160v102.857C448 479.143 347.667 512 224 512S0 479.143 0 438.857V336c48.125 33.143 136.208 48.572 224 48.572S399.874 369.143 448 336z">
+																					</path>
+																				</svg></span></span></div>
+																</a></div>
+														</div>
+
+
+
+														<div style="height:30px" aria-hidden="true"
+															class="wp-block-spacer"></div>
+
+
+
+														<div class="wp-block-uagb-advanced-heading"
+															id="uagb-adv-heading-a2957516-867d-4789-8eb6-200769d2d194">
+															<h2 class="uagb-heading-text"> Big Data </h2>
+															<p class="uagb-desc-text">
+
+																O termo big data é utilizado para descrever um grande
+																volume de dados
+																que é utilizado para eventuais análises. A quantidade de
+																dados criados e
+																armazenados globalmente é quase inimaginável, e apenas
+																continua
+																crescendo. Isso significa que há ainda mais potencial
+																para extrair
+																insights importantes dessas informações — embora apenas
+																uma pequena
+																porcentagem dos dados seja realmente analisada.
+
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</section>
+
+
+
+										<section
+											class="wp-block-uagb-columns uagb-columns__wrap uagb-columns__background-undefined uagb-columns__stack-mobile uagb-columns__valign-top uagb-columns__gap-10 alignundefined"
+											id="uagb-columns-0c8ae891-d3d7-45f4-9302-506463836cff">
+											<div class="uagb-columns__overlay"></div>
+											<div class="uagb-columns__inner-wrap uagb-columns__columns-2">
+												<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined"
+													id="uagb-column-67fa4435-cf1c-4469-aaa4-d8d4f6fac187">
+													<div class="uagb-column__overlay"></div>
+													<div class="uagb-column__inner-wrap">
+														<div class="wp-block-uagb-icon-list uagb-icon-list__outer-wrap uagb-icon-list__layout-vertical uagb-icon-list__no-label"
+															id="uagb-icon-list-1daa969e-53e6-4429-9dad-e6acd4c08a04">
+															<div class="uagb-icon-list__wrap"><a
+																	class="uagb-icon-list-repeater-0 uagb-icon-list__wrapper"
+																	target="_self" rel="noopener noreferrer"
+																	href="https://web.archive.org/web/20230214165204/http://gpads.recife.ifpe.edu.br/">
+																	<div class="uagb-icon-list__content-wrap"><span
+																			class="uagb-icon-list__source-wrap"><span
+																				class="uagb-icon-list__source-icon"><svg
+																					xmlns="http://www.w3.org/2000/svg"
+																					viewBox="0 0 512 512">
+																					<path
+																						d="M480 160H32c-17.673 0-32-14.327-32-32V64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24z">
+																					</path>
+																				</svg></span></span></div>
+																</a></div>
+														</div>
+
+
+
+														<div style="height:30px" aria-hidden="true"
+															class="wp-block-spacer"></div>
+
+
+
+														<div class="wp-block-uagb-advanced-heading"
+															id="uagb-adv-heading-99ef350c-804f-40ca-a82c-ec42eeb96401">
+															<h2 class="uagb-heading-text">Data Mining</h2>
+															<p class="uagb-desc-text">
+																A mineração de dados é um dos fundamentos da
+																inteligência analítica,
+																que ajuda no desenvolvimento de modelos que podem
+																descobrir conexões em
+																milhões ou bilhões de registros. Os avanços no poder e
+																na velocidade de
+																processamento permitiram que práticas manuais e lentas
+																evoluissem para
+																análises mais rápidas, fáceis e automatizadas. </p>
+														</div>
+													</div>
+												</div>
+
+
+
+												<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined"
+													id="uagb-column-57bf3436-40c3-436e-953a-694afef19967">
+													<div class="uagb-column__overlay"></div>
+													<div class="uagb-column__inner-wrap">
+														<div class="wp-block-uagb-icon-list uagb-icon-list__outer-wrap uagb-icon-list__layout-vertical uagb-icon-list__no-label"
+															id="uagb-icon-list-a892937b-6f60-4745-8bf0-6abab888275e">
+															<div class="uagb-icon-list__wrap"><a
+																	class="uagb-icon-list-repeater-0 uagb-icon-list__wrapper"
+																	target="_self" rel="noopener noreferrer"
+																	href="https://web.archive.org/web/20230214165204/http://gpads.recife.ifpe.edu.br/">
+																	<div class="uagb-icon-list__content-wrap"><span
+																			class="uagb-icon-list__source-wrap"><span
+																				class="uagb-icon-list__source-icon"><svg
+																					xmlns="http://www.w3.org/2000/svg"
+																					viewBox="0 0 640 512">
+																					<path
+																						d="M537.6 226.6c4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4z">
+																					</path>
+																				</svg></span></span></div>
+																</a></div>
+														</div>
+
+
+
+														<div style="height:30px" aria-hidden="true"
+															class="wp-block-spacer"></div>
+
+
+
+														<div class="wp-block-uagb-advanced-heading"
+															id="uagb-adv-heading-bbee627d-643b-47bb-946a-2fd569805a87">
+															<h2 class="uagb-heading-text"> Cloud Computing </h2>
+															<p class="uagb-desc-text">
+
+																A computação em nuvem é a entrega sob demanda de poder
+																computacional,
+																armazenamento de banco de dados, aplicações e outros
+																recursos de TI por
+																meio de uma plataforma de serviços de nuvem via Internet
+																com uma
+																definição de preço conforme o uso.
+
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</section>
+									</div>
+								</section>
+
+
+								<a id="noticias" data-ps2id-target="" class="_mPS2id-t"></a>
+
+
+
+								<section
+									class="wp-block-uagb-section uagb-section__wrap uagb-section__background-color alignwide full-height"
+									id="uagb-section-cd6a1176-c202-40c1-a131-2f9bccdf8746">
+									<div class="uagb-section__overlay"></div>
+									<div class="uagb-section__inner-wrap">
+										<h1 class="has-text-align-center">Notícias</h1>
+
+
+										<div id="uagb-post__carousel-0572725f-142e-45d2-a081-ad27cd2256f8"
+											class="uagb-post-grid  uagb-post__image-position-top uagb-post__arrow-outside">
+
+											<div
+												class="uagb-post__items uagb-post__columns-3 is-carousel uagb-post__columns-tablet-2 uagb-post__columns-mobile-1 uagb-post__carousel_equal-height">
+
+												<article>
+													<div class="uagb-post__inner-wrap">
+														<div class="uagb-post__text">
+															<h3 class="uagb-post__title">
+																<a href="https://web.archive.org/web/20230214165204/http://gpads.recife.ifpe.edu.br/2019/12/12/gpads-fecha-parceria-com-o-c-e-s-a-r/"
+																	target="_self"
+																	rel="bookmark noopener noreferrer">GPADS fecha
+																	parceria com o C.E.S.A.R</a>
+															</h3>
+															<div class="uagb-post-grid-byline">
+																<span class="uagb-post__author">
+																	<span
+																		class="dashicons-admin-users dashicons"></span>
+																	<a href="https://web.archive.org/web/20230214165204/http://gpads.recife.ifpe.edu.br/author/gpads/"
+																		title="Posts de gpads" rel="author">gpads</a>
+																</span>
+																<time datetime="2019-12-12T10:50:11-03:00"
+																	class="uagb-post__date">
+																	<span class="dashicons-calendar dashicons"></span>
+																	12 de dezembro de 2019 </time>
+																<span class="uagb-post__comment">
+																	<span
+																		class="dashicons-admin-comments dashicons"></span>
+																	Nenhum comentário </span>
+
+															</div>
+															<div class="uagb-post__excerpt">
+																Na tarde da última quarta (21) representantes do Campus
+																Recife e do
+																Centro de Estudos Estratégicos do Recife (Cesar)
+																firmaram uma parceria
+																inédita. A cooperação,… </div>
+															<div class="uagb-post__cta">
+																<a class="uagb-post__link uagb-text-link"
+																	href="https://web.archive.org/web/20230214165204/http://gpads.recife.ifpe.edu.br/2019/12/12/gpads-fecha-parceria-com-o-c-e-s-a-r/"
+																	target="_self"
+																	rel="bookmark noopener noreferrer">Leia mais</a>
+															</div>
+														</div>
+													</div>
+												</article>
+											</div>
+										</div>
+
+
+
+										<p></p>
+									</div>
+								</section>
+
+
+								<a id="projetos" data-ps2id-target="" class="_mPS2id-t"></a>
+
+
+
+								<section
+									class="wp-block-uagb-section uagb-section__wrap uagb-section__background-undefined"
+									id="uagb-section-45e57c9d-1032-407b-a0ff-22985fdcac64">
+									<div class="uagb-section__overlay"></div>
+									<div class="uagb-section__inner-wrap">
+										<h1 class="has-text-align-center">Projetos</h1>
+
+
+
+										<section
+											class="wp-block-uagb-columns uagb-columns__wrap uagb-columns__background-undefined uagb-columns__stack-mobile uagb-columns__valign-top uagb-columns__gap-10 alignundefined"
+											id="uagb-columns-ac8a9d71-1598-4743-adcf-3a1d433c8ea6">
+											<div class="uagb-columns__overlay"></div>
+											<div class="uagb-columns__inner-wrap uagb-columns__columns-3">
+												<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined"
+													id="uagb-column-f1441304-af15-46fc-92a9-c7f749e5b9ff">
+													<div class="uagb-column__overlay"></div>
+													<div class="uagb-column__inner-wrap">
+														<div class="wp-block-image">
+															<figure class="aligncenter is-resized"><img
+																	src="GPADS_arquivos/capiba.png" alt=""
+																	class="wp-image-186"
+																	srcset="GPADS_arquivos/capiba.png 400w, GPADS_arquivos/capiba-300x228.png 300w"
+																	sizes="(max-width: 350px) 100vw, 350px" width="350"
+																	height="266"></figure>
+														</div>
+
+
+
+														<div class="wp-block-uagb-advanced-heading"
+															id="uagb-adv-heading-7d145cb9-afd9-4701-a448-7e255aca0e94">
+															<h3 class="uagb-heading-text" id="">ECHOS</h3>
+															<div class="uagb-separator-wrap">
+																<div class="uagb-separator"></div>
+															</div>
+															<p class="uagb-desc-text">Monitoramento Ambiental</p>
+														</div>
+
+
+
+														<div style="height:89px" aria-hidden="true"
+															class="wp-block-spacer"></div>
+
+
+
+														<div class="wp-block-uagb-buttons uagb-buttons__outer-wrap projeto-echos-modal projetos pum-trigger"
+															id="uagb-buttons-8b03b5ea-bbd2-4e32-bb5d-659f5dfd6daa"
+															style="cursor: pointer;">
+															<div class="uagb-buttons__wrap">
+																<div
+																	class="uagb-buttons-repeater-0 uagb-button__wrapper">
+																	<a class="uagb-button__link" href=""
+																		rel="noopener noreferrer" target="_self">Leia
+																		Mais</a></div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+
+
+												<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined"
+													id="uagb-column-93612930-ea9e-44af-9aa7-c407e264c9f0">
+													<div class="uagb-column__overlay"></div>
+													<div class="uagb-column__inner-wrap">
+														<div class="wp-block-image">
+															<figure class="aligncenter size-large"><img
+																	src="GPADS_arquivos/img-sistema-embarcado.png"
+																	alt="tempo-real-embarcados" class="wp-image-185"
+																	srcset="GPADS_arquivos/img-sistema-embarcado.png 350w, GPADS_arquivos/img-sistema-embarcado-300x228.png 300w"
+																	sizes="(max-width: 350px) 100vw, 350px"></figure>
+														</div>
+
+
+
+														<div class="wp-block-uagb-advanced-heading"
+															id="uagb-adv-heading-d1631322-3a1d-44f6-9447-a34009698584">
+															<h2 class="uagb-heading-text">Sistemas de Tempo Real e
+																Embarcados</h2>
+															<div class="uagb-separator-wrap">
+																<div class="uagb-separator"></div>
+															</div>
+															<p class="uagb-desc-text">Projetos de Sistemas de Tempo Real
+																e Embarcados</p>
+														</div>
+
+
+
+														<div style="height:46px" aria-hidden="true"
+															class="wp-block-spacer"></div>
+
+
+
+														<div class="wp-block-uagb-buttons uagb-buttons__outer-wrap tempo-real-embarcados-modal pum-trigger"
+															id="uagb-buttons-27fec13f-f2ce-4b95-8054-a1c1e67bc820"
+															style="cursor: pointer;">
+															<div class="uagb-buttons__wrap">
+																<div
+																	class="uagb-buttons-repeater-0 uagb-button__wrapper">
+																	<a class="uagb-button__link" href=""
+																		rel="noopener noreferrer" target="_self"> Leia
+																		Mais</a></div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+
+
+												<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined"
+													id="uagb-column-bb8b1b2d-3b2d-4ab0-8291-2a1034793a26">
+													<div class="uagb-column__overlay"></div>
+													<div class="uagb-column__inner-wrap">
+														<div
+															class="wp-block-image projeto-sistemas-embarcados-modal projetos">
+															<figure class="aligncenter size-large"><img
+																	src="GPADS_arquivos/unnamed.png" alt="blindmobi"
+																	class="wp-image-344"
+																	srcset="GPADS_arquivos/unnamed.png 271w, GPADS_arquivos/unnamed-243x300.png 243w"
+																	sizes="(max-width: 271px) 100vw, 271px"></figure>
+														</div>
+
+
+
+														<div class="wp-block-uagb-advanced-heading"
+															id="uagb-adv-heading-185035e3-6ed1-4d86-93ff-68d24441acfa">
+															<h3 class="uagb-heading-text">BlindMobi</h3>
+															<div class="uagb-separator-wrap">
+																<div class="uagb-separator"></div>
+															</div>
+															<p class="uagb-desc-text">Tecnologias Assistivas</p>
+														</div>
+
+
+
+														<div style="height:21px" aria-hidden="true"
+															class="wp-block-spacer"></div>
+
+
+
+														<div class="wp-block-uagb-buttons uagb-buttons__outer-wrap blindmobi-modal pum-trigger"
+															id="uagb-buttons-610faded-8aa2-44ca-9735-d299935e3aad"
+															style="cursor: pointer;">
+															<div class="uagb-buttons__wrap">
+																<div
+																	class="uagb-buttons-repeater-0 uagb-button__wrapper">
+																	<a class="uagb-button__link" href=""
+																		rel="noopener noreferrer" target="_self"> Leia
+																		Mais</a></div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</section>
+
+
+
+										<section
+											class="wp-block-uagb-columns uagb-columns__wrap uagb-columns__background-undefined uagb-columns__stack-mobile uagb-columns__valign-undefined uagb-columns__gap-10 alignundefined"
+											id="uagb-columns-6bb65192-3ee1-4ed6-81c6-ea9a9540fb84">
+											<div class="uagb-columns__overlay"></div>
+											<div class="uagb-columns__inner-wrap uagb-columns__columns-3">
+												<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined"
+													id="uagb-column-cea5065f-b6aa-4924-8937-fcfeea9ec44f">
+													<div class="uagb-column__overlay"></div>
+													<div class="uagb-column__inner-wrap">
+														<figure class="wp-block-image size-large"><img
+																src="GPADS_arquivos/img-aws.png" alt="aws"
+																class="wp-image-402"
+																srcset="GPADS_arquivos/img-aws.png 350w, GPADS_arquivos/img-aws-300x228.png 300w"
+																sizes="(max-width: 350px) 100vw, 350px"></figure>
+
+
+
+														<div class="wp-block-uagb-advanced-heading"
+															id="uagb-adv-heading-8a83fcc9-5ba5-44a1-a9aa-1a20ab78b7f4">
+															<h2 class="uagb-heading-text">Integração em R com
+																Ferramentas de Cloud Computing</h2>
+															<div class="uagb-separator-wrap">
+																<div class="uagb-separator"></div>
+															</div>
+															<p class="uagb-desc-text">Projeto Estatístico Computacional
+															</p>
+														</div>
+
+
+
+														<div style="height:20px" aria-hidden="true"
+															class="wp-block-spacer"></div>
+
+
+
+														<div class="wp-block-uagb-buttons uagb-buttons__outer-wrap integracao-r-cloud-computing-modal pum-trigger"
+															id="uagb-buttons-1860adc6-d8d6-4e6a-a092-90762b657d33"
+															style="cursor: pointer;">
+															<div class="uagb-buttons__wrap">
+																<div
+																	class="uagb-buttons-repeater-0 uagb-button__wrapper">
+																	<a class="uagb-button__link" href=""
+																		rel="noopener noreferrer" target="_self">Leia
+																		Mais</a></div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+
+
+												<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined"
+													id="uagb-column-52448d61-c057-4a12-99c8-6661adbcae61">
+													<div class="uagb-column__overlay"></div>
+													<div class="uagb-column__inner-wrap">
+														<div class="wp-block-image">
+															<figure class="aligncenter size-large"><img
+																	src="GPADS_arquivos/img-data-miningg.png"
+																	alt="data-mining" class="wp-image-403"
+																	srcset="GPADS_arquivos/img-data-miningg.png 350w, GPADS_arquivos/img-data-miningg-300x228.png 300w"
+																	sizes="(max-width: 350px) 100vw, 350px"></figure>
+														</div>
+
+
+
+														<div class="wp-block-uagb-advanced-heading"
+															id="uagb-adv-heading-ceeaecce-32e8-4ee7-86f6-78dca40b55a5">
+															<h2 class="uagb-heading-text">Data Mining</h2>
+															<div class="uagb-separator-wrap">
+																<div class="uagb-separator"></div>
+															</div>
+															<p class="uagb-desc-text">Projeto de Data Mining</p>
+														</div>
+
+
+
+														<div style="height:101px" aria-hidden="true"
+															class="wp-block-spacer"></div>
+
+
+
+														<div class="wp-block-uagb-buttons uagb-buttons__outer-wrap data-mining-modal pum-trigger"
+															id="uagb-buttons-fa06f7dd-49f2-40de-af58-78a4841cf05b"
+															style="cursor: pointer;">
+															<div class="uagb-buttons__wrap">
+																<div
+																	class="uagb-buttons-repeater-0 uagb-button__wrapper">
+																	<a class="uagb-button__link" href=""
+																		rel="noopener noreferrer" target="_self"> Leia
+																		Mais</a></div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+
+
+												<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined"
+													id="uagb-column-0baf8ae3-a9b6-48a2-a48d-d8e12bcf12f5">
+													<div class="uagb-column__overlay"></div>
+													<div class="uagb-column__inner-wrap">
+														<div class="wp-block-image">
+															<figure class="aligncenter size-large"><img
+																	src="GPADS_arquivos/img-geolocalizacao.png"
+																	alt="geolocalizacao" class="wp-image-404"
+																	srcset="GPADS_arquivos/img-geolocalizacao.png 350w, GPADS_arquivos/img-geolocalizacao-300x228.png 300w"
+																	sizes="(max-width: 350px) 100vw, 350px"></figure>
+														</div>
+
+
+
+														<div class="wp-block-uagb-advanced-heading"
+															id="uagb-adv-heading-ce978f63-a949-4ce9-8808-6ecaddcb87f7">
+															<h2 class="uagb-heading-text">Geolocalização</h2>
+															<div class="uagb-separator-wrap">
+																<div class="uagb-separator"></div>
+															</div>
+															<p class="uagb-desc-text">Projeto de geolocalização</p>
+														</div>
+
+
+
+														<div style="height:101px" aria-hidden="true"
+															class="wp-block-spacer"></div>
+
+
+
+														<div class="wp-block-uagb-buttons uagb-buttons__outer-wrap geolocalização-modal pum-trigger"
+															id="uagb-buttons-a2aaf17a-05d9-487f-9694-ed7ddb8407bc"
+															style="cursor: pointer;">
+															<div class="uagb-buttons__wrap">
+																<div
+																	class="uagb-buttons-repeater-0 uagb-button__wrapper">
+																	<a class="uagb-button__link" href=""
+																		rel="noopener noreferrer" target="_self"> Leia
+																		Mais</a></div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</section>
+									</div>
+								</section>
+
+
+								<a id="equipe" data-ps2id-target="" class="_mPS2id-t"></a>
+
+
+
+								<section class="wp-block-uagb-section uagb-section__wrap uagb-section__background-color"
+									id="uagb-section-f7b9be2e-60ea-46f0-b63e-d275c6c7c127">
+									<div class="uagb-section__overlay"></div>
+									<div class="uagb-section__inner-wrap">
+										<h1 class="has-text-align-center">Equipe</h1>
+
+
+
+										<section
+											class="wp-block-uagb-columns uagb-columns__wrap uagb-columns__background-none uagb-columns__stack-mobile uagb-columns__valign-undefined uagb-columns__gap-10 alignundefined"
+											id="uagb-columns-7d6adf79-6936-4fe4-9342-fdc38342739f">
+											<div class="uagb-columns__overlay"></div>
+											<div class="uagb-columns__inner-wrap uagb-columns__columns-2">
+												<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined"
+													id="uagb-column-472bd86d-66ee-4819-b161-ed8dcf14b9ad">
+													<div class="uagb-column__overlay"></div>
+													<div class="uagb-column__inner-wrap">
+														<div class="wp-block-uagb-team uagb-team uagb-team__outer-wrap uagb-team__image-position-above uagb-team__align-center uagb-team__stack-tablet"
+															id="uagb-team-5ed69897-a891-4fa1-b7ca-e5ac67e6b7bf">
+															<div class="uagb-team__wrap">
+																<div class="uagb-team__content">
+																	<div
+																		class="uagb-team__image-wrap uagb-team__image-crop-circle">
+																		<img class="" src="GPADS_arquivos/lala.jpg"
+																			alt=""></div>
+																	<div class="uagb-team__title-wrap">
+																		<h3 class="uagb-team__title"> Marco Domingues
+																		</h3><span class="uagb-team__prefix">Professor
+																			Pesquisador</span>
+																	</div>
+																	<div class="uagb-team__desc-wrap">
+																		<p class="uagb-team__desc"></p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+
+
+												<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined"
+													id="uagb-column-dec97949-5d18-4375-81a8-af4727a50868">
+													<div class="uagb-column__overlay"></div>
+													<div class="uagb-column__inner-wrap">
+														<div class="wp-block-uagb-team uagb-team uagb-team__outer-wrap uagb-team__image-position-above uagb-team__align-center uagb-team__stack-tablet"
+															id="uagb-team-6fc57466-a143-4483-875e-5e213cfd02d2">
+															<div class="uagb-team__wrap">
+																<div class="uagb-team__content">
+																	<div
+																		class="uagb-team__image-wrap uagb-team__image-crop-circle">
+																		<img class="" src="GPADS_arquivos/pp.jpeg"
+																			alt=""></div>
+																	<div class="uagb-team__title-wrap">
+																		<h3 class="uagb-team__title"> Anderson Moreira
+																		</h3><span class="uagb-team__prefix">
+																			<em>Professor Pesquisador</em></span>
+																	</div>
+																	<div class="uagb-team__desc-wrap">
+																		<p class="uagb-team__desc"></p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</section>
+
+
+
+										<section
+											class="wp-block-uagb-columns uagb-columns__wrap uagb-columns__background-undefined uagb-columns__stack-mobile uagb-columns__valign-undefined uagb-columns__gap-10 alignundefined"
+											id="uagb-columns-c7ccd42e-a640-4e41-a2e0-e96632a43ed2">
+											<div class="uagb-columns__overlay"></div>
+											<div class="uagb-columns__inner-wrap uagb-columns__columns-2">
+												<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined"
+													id="uagb-column-f649b0e9-f876-4e09-b6d3-ac916c6c8d22">
+													<div class="uagb-column__overlay"></div>
+													<div class="uagb-column__inner-wrap">
+														<div class="wp-block-uagb-team uagb-team uagb-team__outer-wrap uagb-team__image-position-above uagb-team__align-center uagb-team__stack-tablet"
+															id="uagb-team-0be82362-2595-4def-9ae6-3114a2a3f616">
+															<div class="uagb-team__wrap">
+																<div class="uagb-team__content">
+																	<div
+																		class="uagb-team__image-wrap uagb-team__image-crop-circle">
+																		<img class="" src="GPADS_arquivos/PG.png"
+																			alt="paulo-goncalves"></div>
+																	<div class="uagb-team__title-wrap">
+																		<h3 class="uagb-team__title"> Paulo Gonçalves
+																		</h3><span class="uagb-team__prefix">
+																			<em>Professor Pesquisador</em></span>
+																	</div>
+																	<div class="uagb-team__desc-wrap">
+																		<p class="uagb-team__desc"></p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+
+
+												<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined"
+													id="uagb-column-1521fc3a-c10c-4955-a202-7a85089a534e">
+													<div class="uagb-column__overlay"></div>
+													<div class="uagb-column__inner-wrap">
+														<div class="wp-block-uagb-team uagb-team uagb-team__outer-wrap uagb-team__image-position-above uagb-team__align-center uagb-team__stack-tablet"
+															id="uagb-team-e5e25461-6aef-4350-a42e-a9894150f522">
+															<div class="uagb-team__wrap">
+																<div class="uagb-team__content">
+																	<div
+																		class="uagb-team__image-wrap uagb-team__image-crop-circle">
+																		<img class="" src="GPADS_arquivos/hilson2.png"
+																			alt=""></div>
+																	<div class="uagb-team__title-wrap">
+																		<h3 class="uagb-team__title"> Hilson Andrade
+																		</h3><span class="uagb-team__prefix">
+																			<em>Professor Pesquisador</em></span>
+																	</div>
+																	<div class="uagb-team__desc-wrap">
+																		<p class="uagb-team__desc"></p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</section>
+
+
+
+										<section
+											class="wp-block-uagb-columns uagb-columns__wrap uagb-columns__background-undefined uagb-columns__stack-mobile uagb-columns__valign-undefined uagb-columns__gap-10 alignundefined"
+											id="uagb-columns-ac7b6180-03ca-42e9-b1a4-df8253a621b0">
+											<div class="uagb-columns__overlay"></div>
+											<div class="uagb-columns__inner-wrap uagb-columns__columns-2">
+												<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined"
+													id="uagb-column-af189e03-6c3b-4d2e-a20b-377938b29152">
+													<div class="uagb-column__overlay"></div>
+													<div class="uagb-column__inner-wrap">
+														<div class="wp-block-uagb-team uagb-team uagb-team__outer-wrap uagb-team__image-position-above uagb-team__align-center uagb-team__stack-tablet"
+															id="uagb-team-d8e44b63-473a-4090-91ce-4e36dbe1fb57">
+															<div class="uagb-team__wrap">
+																<div class="uagb-team__content">
+																	<div
+																		class="uagb-team__image-wrap uagb-team__image-crop-circle">
+																		<img class="" src="GPADS_arquivos/rra.jpg"
+																			alt=""></div>
+																	<div class="uagb-team__title-wrap">
+																		<h3 class="uagb-team__title"> Rafael Roque</h3>
+																		<span class="uagb-team__prefix"> <em>Professor
+																				Pesquisador</em></span>
+																	</div>
+																	<div class="uagb-team__desc-wrap">
+																		<p class="uagb-team__desc"></p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+
+
+												<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined"
+													id="uagb-column-64b8c682-7b4a-4090-8c33-496da89ab985">
+													<div class="uagb-column__overlay"></div>
+													<div class="uagb-column__inner-wrap">
+														<div class="wp-block-uagb-team uagb-team uagb-team__outer-wrap uagb-team__image-position-above uagb-team__align-center uagb-team__stack-tablet"
+															id="uagb-team-029d77e5-ba96-4b14-86c4-86edd9cf4860">
+															<div class="uagb-team__wrap">
+																<div class="uagb-team__content">
+																	<div
+																		class="uagb-team__image-wrap uagb-team__image-crop-circle">
+																		<img class="" src="GPADS_arquivos/SAMUEL.png"
+																			alt="samuel-macedo"></div>
+																	<div class="uagb-team__title-wrap">
+																		<h3 class="uagb-team__title"> Samuel Macedo</h3>
+																		<span class="uagb-team__prefix"> <em>Professor
+																				Pesquisador</em></span>
+																	</div>
+																	<div class="uagb-team__desc-wrap">
+																		<p class="uagb-team__desc"></p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</section>
+
+
+
+										<section
+											class="wp-block-uagb-columns uagb-columns__wrap uagb-columns__background-undefined uagb-columns__stack-mobile uagb-columns__valign-undefined uagb-columns__gap-10 alignundefined"
+											id="uagb-columns-e02bd414-73dd-42f2-9e57-c88406da2c89">
+											<div class="uagb-columns__overlay"></div>
+											<div class="uagb-columns__inner-wrap uagb-columns__columns-2">
+												<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined"
+													id="uagb-column-fbb5c368-49ec-4481-9e34-bda62f8d044d">
+													<div class="uagb-column__overlay"></div>
+													<div class="uagb-column__inner-wrap">
+														<div class="wp-block-uagb-team uagb-team uagb-team__outer-wrap uagb-team__image-position-above uagb-team__align-center uagb-team__stack-tablet"
+															id="uagb-team-4dfb1d63-765c-4da6-9fcf-25bb6992d1dd">
+															<div class="uagb-team__wrap">
+																<div class="uagb-team__content">
+																	<div
+																		class="uagb-team__image-wrap uagb-team__image-crop-circle">
+																		<img class="" src="GPADS_arquivos/abaadie.png"
+																			alt=""></div>
+																	<div class="uagb-team__title-wrap">
+																		<h3 class="uagb-team__title">Paulo Guedes</h3>
+																		<span class="uagb-team__prefix"> <em>Professor
+																				Pesquisador</em></span>
+																	</div>
+																	<div class="uagb-team__desc-wrap">
+																		<p class="uagb-team__desc"></p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+
+
+												<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined"
+													id="uagb-column-9aafe497-1a79-45a2-b969-0fac7f63196b">
+													<div class="uagb-column__overlay"></div>
+													<div class="uagb-column__inner-wrap">
+														<div class="wp-block-uagb-team uagb-team uagb-team__outer-wrap uagb-team__image-position-above uagb-team__align-center uagb-team__stack-tablet"
+															id="uagb-team-4b8076fb-51e7-4b33-8223-222ce9f3bc22">
+															<div class="uagb-team__wrap">
+																<div class="uagb-team__content">
+																	<div
+																		class="uagb-team__image-wrap uagb-team__image-crop-circle">
+																		<img class="" src="GPADS_arquivos/Renata.png"
+																			alt="renata-freire"></div>
+																	<div class="uagb-team__title-wrap">
+																		<h3 class="uagb-team__title">Renata Freire</h3>
+																		<span class="uagb-team__prefix"> <em>Professor
+																				Pesquisador</em></span>
+																	</div>
+																	<div class="uagb-team__desc-wrap">
+																		<p class="uagb-team__desc"></p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</section>
+									</div>
+								</section>
+
+
+
+								<p></p>
+
+
+
+							</div><!-- .entry-content .clear -->
+
+
+
+						</article><!-- #post-## -->
+
+
+
+
+
+					</main><!-- #main -->
+
+
+				</div><!-- #primary -->
+
+
+
+			</div> <!-- ast-container -->
+
+		</div><!-- #content -->
+
+
+
+
+		<footer class="site-footer" id="colophon" role="contentinfo" itemtype="https://schema.org/WPFooter"
+			itemscope="itemscope">
+
+
+
+			<div class="ast-small-footer footer-sml-layout-1">
+				<div class="ast-footer-overlay">
+					<div class="ast-container">
+						<div class="ast-small-footer-wrap">
+							<div class="ast-small-footer-section ast-small-footer-section-1">
+								Copyright © 2023 <span class="ast-footer-site-title">GPADS</span> | Developed by Carlos
+								Roberto and Sérgio Adriani
+							</div>
+
+
+						</div><!-- .ast-row .ast-small-footer-wrap -->
+					</div><!-- .ast-container -->
+				</div><!-- .ast-footer-overlay -->
+			</div><!-- .ast-small-footer-->
+
+
+		</footer><!-- #colophon -->
+
+
+	</div><!-- #page -->
+
+
+	<div id="pum-418" class="pum pum-overlay pum-theme-283 pum-theme-283 popmake-overlay pum-click-to-close click_open"
+		data-popmake="{&quot;id&quot;:418,&quot;slug&quot;:&quot;integracao-em-r-com-ferramentas-de-cloud-computing&quot;,&quot;theme_id&quot;:283,&quot;cookies&quot;:[],&quot;triggers&quot;:[{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;.integracao-r-cloud-computing-modal&quot;}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;normal&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:&quot;1&quot;,&quot;esc_press&quot;:&quot;1&quot;,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}"
+		role="dialog" aria-hidden="true">
+
+		<div id="popmake-418"
+			class="pum-container popmake theme-283 pum-responsive pum-responsive-normal responsive size-normal">
+
+
+
+
+
+
+
+			<div class="pum-content popmake-content">
+				<h1 style="text-align: center;">Integração em R com Ferramentas de Cloud Computing</h1>
+				<h6 style="text-align: center;"><span style="color: #999999;">Samuel Victor Medeiros Macedo</span></h6>
+				<hr>
+				<p style="text-align: center;">É crescente a cada dia a quantidade de
+					informação gerada na internet. Bancos de dados na ordem de terabytes são
+					cada vez mais comuns no dia a dia dos analistas de dados. É inviável do
+					ponto vista financeiro qualquer grupo de pesquisa ou empresa manter
+					servidores locais capazes de armazenar e processar essa quantidade dados
+					em tempo hábil. Visando este problema, surgiu a área de computação na
+					nuvem. Basicamente, ao invés de comprar servidores, essas máquinas são
+					alugadas, e dessa forma é possível armazenar e analisar dados na ordem
+					de petabytes, com o custo de alguns dólares a hora. Apesar das
+					ferramentas de computação na nuvem ser de fácil acesso às pessoas com
+					conhecimento em programação, ela ainda está muito longe do grande
+					público, pois é necessário executar linhas de comandos em linguagens
+					mais adaptadas a nuvem, como por exemplo, Java e Scala.</p>
+				<p style="text-align: center;">O R é uma linguagem de programação muito
+					utilizada entre estatísticos e analistas porque permite, de maneira
+					simples, tabelar dados, manipular, analisar e construir gráficos, tudo
+					isso com poucas linhas de código, permitindo que profissionais com pouco
+					conhecimento de programação já desenvolva boas análises. Apesar de
+					existirem pesquisas na área, a integração em R com os principais
+					serviços de computação na nuvem ainda não é uma realidade, e o usuário
+					de R ainda precisa de muito conhecimento de programação para ser
+					produtivo na análise de grandes bases de dados. os analistas de dados
+					acostumados a programar em R com os desafios atuais de se trabalhar com
+					massiva quantidade de informações</p>
+			</div>
+
+
+
+
+			<button type="button" class="pum-close popmake-close" aria-label="Close">
+				X </button>
+
+		</div>
+
+	</div>
+	<div id="pum-422" class="pum pum-overlay pum-theme-283 pum-theme-283 popmake-overlay pum-click-to-close click_open"
+		data-popmake="{&quot;id&quot;:422,&quot;slug&quot;:&quot;data-mining&quot;,&quot;theme_id&quot;:283,&quot;cookies&quot;:[],&quot;triggers&quot;:[{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;.data-mining-modal&quot;}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;normal&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:&quot;1&quot;,&quot;esc_press&quot;:&quot;1&quot;,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}"
+		role="dialog" aria-hidden="true">
+
+		<div id="popmake-422"
+			class="pum-container popmake theme-283 pum-responsive pum-responsive-normal responsive size-normal">
+
+
+
+
+
+
+
+			<div class="pum-content popmake-content">
+				<h1 style="text-align: center;">Data Mining</h1>
+				<h6 style="text-align: center;"><span style="color: #999999;">Paulo Maurício Gonçalves Júnior</span>
+				</h6>
+				<hr>
+				<p style="text-align: center;">EM BREVE!</p>
+			</div>
+
+
+
+
+			<button type="button" class="pum-close popmake-close" aria-label="Close">
+				X </button>
+
+		</div>
+
+	</div>
+	<div id="pum-425" class="pum pum-overlay pum-theme-283 pum-theme-283 popmake-overlay pum-click-to-close click_open"
+		data-popmake="{&quot;id&quot;:425,&quot;slug&quot;:&quot;geolocalizacao&quot;,&quot;theme_id&quot;:283,&quot;cookies&quot;:[],&quot;triggers&quot;:[{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;.geolocaliza\u00e7\u00e3o-modal&quot;}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;normal&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:&quot;1&quot;,&quot;esc_press&quot;:&quot;1&quot;,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}"
+		role="dialog" aria-hidden="true">
+
+		<div id="popmake-425"
+			class="pum-container popmake theme-283 pum-responsive pum-responsive-normal responsive size-normal">
+
+
+
+
+
+
+
+			<div class="pum-content popmake-content">
+				<h1 style="text-align: center;">Geolocalização</h1>
+				<h6 style="text-align: center;"><span style="color: #999999;">Anderson Luiz Souza Moreira</span></h6>
+				<hr>
+				<p style="text-align: center;">Projeto de fiscalização ambiental, em
+					parceria com o órgão público APAC, que visa melhorar a eficiência do
+					controle de utilização de águas em Pernambuco.</p>
+			</div>
+
+
+
+
+			<button type="button" class="pum-close popmake-close" aria-label="Close">
+				X </button>
+
+		</div>
+
+	</div>
+	<div id="pum-280" class="pum pum-overlay pum-theme-283 pum-theme-283 popmake-overlay pum-click-to-close click_open"
+		data-popmake="{&quot;id&quot;:280,&quot;slug&quot;:&quot;projeto-echos&quot;,&quot;theme_id&quot;:283,&quot;cookies&quot;:[],&quot;triggers&quot;:[{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;cookie_name&quot;:&quot;&quot;,&quot;extra_selectors&quot;:&quot;.projeto-echos-modal&quot;}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;large&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:&quot;1&quot;,&quot;esc_press&quot;:&quot;1&quot;,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}"
+		role="dialog" aria-hidden="true">
+
+		<div id="popmake-280"
+			class="pum-container popmake theme-283 pum-responsive pum-responsive-large responsive size-large">
+
+
+
+
+
+
+
+			<div class="pum-content popmake-content">
+				<h1 style="text-align: center;">Projeto ECHOS</h1>
+				<h6 style="text-align: center;"><span style="color: #999999;">Desenvolvido pelo Grupo CapibaLabs</span>
+				</h6>
+				<hr>
+				<p style="text-align: center;">O agronegócio exige dos produtores rurais
+					um alto grau de especialização e de profissionalismo, visando aumentar a
+					capacidade gerencial das empresas rurais. Para que a agricultura
+					continue a desempenhar o seu papel preponderante perante a economia e
+					sociedade, é fundamental a adoção de tecnologias modernas, que assegurem
+					o aumento da produtividade, a redução dos custos de produção e a oferta
+					de alimentos com qualidade.</p>
+				<p style="text-align: center;">O uso de tecnologias que dão precisão na
+					agricultura, como monitores de colheita e dispositivos de
+					aplicabilidades variadas é algo cada vez mais habitual no Brasil. Além
+					dos benefícios diretos, ao permitir a automação e o controle mais
+					preciso das operações agrônomas, esta tecnologia tem um outro efeito
+					também importante: a manipulação de dados precisos sobre cada operação
+					realizada, desde a semeação e plantio de culturas até a colheita, em
+					cada ponto de um estabelecimento rural.O sistema de monitoramento e
+					automação agrícola e ambiental – ECHOS – foi o primeiro projeto
+					realizado pelo CAPILAB. O intuito inicial deste era a parte de
+					monitoramento ambiental como auxílio a gestão pública. Hoje o mesmo é
+					indicado principalmente para pequenas e médias áreas agrárias e a
+					construção de um sistema baseado nos conceitos da Internet das Coisas
+					para que utilize tecnologias de baixo custo. Também se objetiva analisar
+					este novo setor da área de Tecnologia da Informação.</p>
+			</div>
+
+
+
+
+			<button type="button" class="pum-close popmake-close" aria-label="Close">
+				X </button>
+
+		</div>
+
+	</div>
+	<div id="pum-305" class="pum pum-overlay pum-theme-283 pum-theme-283 popmake-overlay pum-click-to-close click_open"
+		data-popmake="{&quot;id&quot;:305,&quot;slug&quot;:&quot;sistemas-de-tempo-real-e-embarcados&quot;,&quot;theme_id&quot;:283,&quot;cookies&quot;:[],&quot;triggers&quot;:[{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;cookie_name&quot;:&quot;&quot;,&quot;extra_selectors&quot;:&quot;.tempo-real-embarcados-modal&quot;}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;normal&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:&quot;1&quot;,&quot;esc_press&quot;:&quot;1&quot;,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}"
+		role="dialog" aria-hidden="true">
+
+		<div id="popmake-305"
+			class="pum-container popmake theme-283 pum-responsive pum-responsive-normal responsive size-normal">
+
+
+
+
+
+
+
+			<div class="pum-content popmake-content">
+				<h1 style="text-align: center;">Sistemas de Tempo Real e Embarcados</h1>
+				<h6 style="text-align: center;"><span style="color: #999999;">Anderson Luiz Souza Moreira</span></h6>
+				<hr>
+				<p style="text-align: center;">Sistemas de tempo real e sistemas
+					embarcado são a combinação de hardware e software, projetado para
+					executar uma função dedicada, onde o conjunto é encapsulado e dedicado
+					ao sistema que deve controlá-lo, podendo interagir continuamente com o
+					ambiente a sua volta por meio de sensores e atuadores.</p>
+				<p style="text-align: center;">Em alguns casos, os sistemas embarcados
+					fazem parte de um sistema ou produto maior, geralmente responsáveis por
+					realizar uma tarefa especifica. Atualmente, os sistemas embarcados estão
+					presentes no nosso cotidiano sob diferentes formas e com diferentes
+					objetivos, por exemplo: sistemas aviônicos, sistemas de telemetria,
+					sistemas de antitravamento em freios (ABS), controladores de voo,
+					telefonia celular, calculadoras de mão, micro-ondas, caixas eletrônicos,
+					videogames, periféricos de computadores (impressoras, mouses, teclados,
+					etc.) Os Sistemas de Tempo Real encontram-se cada vez mais presentes em
+					nosso dia-a-dia, e com uma utilização e importância crescente. O grupo
+					GPADS é capaz de implementar dispositivos com propósitos diversos, tais
+					quais controle, automação e sensoreamento. Também temos capacidade de
+					construção de placas que sejam capazes de interagir com sensores e medir
+					valores físicos, como temperatura, além de controlar atuadores que iram
+					interagir com o meio, fazendo chaveamentos para acionar e desativar, a
+					placa também deve poder se conectar à Internet para enviar dados para o
+					banco de dados.</p>
+			</div>
+
+
+
+
+			<button type="button" class="pum-close popmake-close" aria-label="Close">
+				X </button>
+
+		</div>
+
+	</div>
+	<div id="pum-340" class="pum pum-overlay pum-theme-283 pum-theme-283 popmake-overlay pum-click-to-close click_open"
+		data-popmake="{&quot;id&quot;:340,&quot;slug&quot;:&quot;blindmobi&quot;,&quot;theme_id&quot;:283,&quot;cookies&quot;:[],&quot;triggers&quot;:[{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;cookie_name&quot;:&quot;&quot;,&quot;extra_selectors&quot;:&quot;.blindmobi-modal&quot;}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;normal&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:&quot;1&quot;,&quot;esc_press&quot;:&quot;1&quot;,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}"
+		role="dialog" aria-hidden="true">
+
+		<div id="popmake-340"
+			class="pum-container popmake theme-283 pum-responsive pum-responsive-normal responsive size-normal">
+
+
+
+
+
+
+
+			<div class="pum-content popmake-content">
+				<h1 style="text-align: center;">BlindMobi</h1>
+				<h6 style="text-align: center;"><span style="color: #999999;">Hilson Gomes Vilar de Andrade</span></h6>
+				<hr>
+				<p><img class="aligncenter size-full wp-image-342" src="GPADS_arquivos/blindmobi-connepi.jpg"
+						alt="blindmobi-connepi" width="472" height="271"></p>
+				<p style="text-align: center;">O BlindMobi é um sistema para identificação de ônibus, de baixo custo,
+					para pessoas com deficiência visual.</p>
+				<p style="text-align: center;">De acordo com os dados divulgados pelo
+					último censo do IBGE, o Nordeste é a região com maior percentual da
+					população que apresenta pelo menos um tipo de deficiência, e dentre esse
+					percentual, 4,1% possuem alguma deficiência visual severa.</p>
+				<p style="text-align: center;">Diante deste cenário, foi desenvolvido a
+					plataforma BlindMobi, com o objetivo de permitir a identificação da
+					aproximação de itinerários de transportes coletivos de forma simples. O
+					BlindMobi utiliza a tecnologia <em>Bluetooth Low Energy</em> (BLE), que consiste no envio de
+					mensagens periódicas a partir de um componente de&nbsp;<em>hardware&nbsp;</em>próprio. Essas
+					mensagens contém um identificador único para cada ônibus (ou outro transporte), e são lidas por um
+					componente de <em>software</em>
+					que compara o identificador com o destino desejado pelo usuário,
+					emitindo um alerta sonoro para o mesmo, indicando a proximidade e parada
+					do veículo.</p>
+				<p style="text-align: center;">Esse projeto é atualmente desenvolvido
+					com apoio da Pró-reitoria de Extensão do IFPE (PROEXT) e do IFPE –
+					Campus Recife, através do Programa Institucional para Concessão de
+					Bolsas de Extensão (PIBEX). Como resultado, foram desenvolvidos os
+					protótipos do componente de&nbsp;<em>hardware</em> (BlindMobi Box) e do componente de
+					<em>software&nbsp;</em>(App BlindMobi), o qual já foram realizados testes em campo.</p>
+				<p style="text-align: center;">O projeto já realizou o registro da patente, sob o código
+					BR1020180742051.</p>
+				<p style="text-align: center;">Para mais informações sobre o BlindMobi, acesse este <a
+						href="https://web.archive.org/web/20230214165204/https://sites.google.com/recife.ifpe.edu.br/hilsonvilar/blindmobi?authuser=0"
+						target="_blank" rel="noopener noreferrer">site</a>.</p>
+			</div>
+
+
+
+
+			<button type="button" class="pum-close popmake-close" aria-label="Close">
+				X </button>
+
+		</div>
+
+	</div>
+	<script>
+		var astra = { "break_point": "921", "isRtl": "" };
+	</script>
+	<script src="GPADS_arquivos/style.min.js"></script>
+	<script src="GPADS_arquivos/detectmobilebrowser.js"></script>
+	<script>
+		var option = { "mystickyClass": ".main-header-bar-wrap", "activationHeight": "0", "disableWidth": "0", "disableLargeWidth": "0", "adminBar": "false", "device_desktop": "1", "device_mobile": "1", "mystickyTransition": "fade", "mysticky_disable_down": "false" };
+	</script>
+	<script src="GPADS_arquivos/mystickymenu.min.js"></script>
+	<script>
+		var mPS2id_params = { "instances": { "mPS2id_instance_0": { "selector": "a[href*='#']:not([href='#'])", "autoSelectorMenuLinks": "true", "excludeSelector": "a[href^='#tab-'], a[href^='#tabs-'], a[data-toggle]:not([data-toggle='tooltip']), a[data-slide], a[data-vc-tabs], a[data-vc-accordion]", "scrollSpeed": 800, "autoScrollSpeed": "true", "scrollEasing": "easeInOutQuint", "scrollingEasing": "easeOutQuint", "pageEndSmoothScroll": "true", "stopScrollOnUserAction": "false", "autoCorrectScroll": "false", "layout": "vertical", "offset": 0, "dummyOffset": "false", "highlightSelector": "", "clickedClass": "mPS2id-clicked", "targetClass": "mPS2id-target", "highlightClass": "mPS2id-highlight", "forceSingleHighlight": "false", "keepHighlightUntilNext": "false", "highlightByNextTarget": "false", "appendHash": "false", "scrollToHash": "true", "scrollToHashForAll": "true", "scrollToHashDelay": 0, "scrollToHashUseElementData": "true", "scrollToHashRemoveUrlHash": "false", "disablePluginBelow": 0, "adminDisplayWidgetsId": "true", "adminTinyMCEbuttons": "true", "unbindUnrelatedClickEvents": "false", "normalizeAnchorPointTargets": "false" } }, "total_instances": "1", "shortcode_class": "_ps2id" };
+	</script>
+	<script src="GPADS_arquivos/page-scroll-to-id.min.js"></script>
+	<script src="GPADS_arquivos/core.min.js"></script>
+	<script src="GPADS_arquivos/position.min.js"></script>
+	<script>
+		var pum_vars = { "version": "1.8.14", "ajaxurl": "https:\/\/web.archive.org\/web\/20230214165204\/http:\/\/gpads.recife.ifpe.edu.br\/wp-admin\/admin-ajax.php", "restapi": "https:\/\/web.archive.org\/web\/20230214165204\/http:\/\/gpads.recife.ifpe.edu.br\/wp-json\/pum\/v1", "rest_nonce": null, "default_theme": "264", "debug_mode": "", "disable_tracking": "", "home_url": "\/", "message_position": "top", "core_sub_forms_enabled": "1", "popups": [] };
+		var ajaxurl = "https:\/\/web.archive.org\/web\/20230214165204\/http:\/\/gpads.recife.ifpe.edu.br\/wp-admin\/admin-ajax.php";
+		var pum_debug_vars = { "debug_mode_enabled": "Popup Maker: Debug Mode Enabled", "debug_started_at": "Debug started at:", "debug_more_info": "For more information on how to use this information visit https:\/\/docs.wppopupmaker.com\/?utm_medium=js-debug-info&utm_campaign=ContextualHelp&utm_source=browser-console&utm_content=more-info", "global_info": "Global Information", "localized_vars": "Localized variables", "popups_initializing": "Popups Initializing", "popups_initialized": "Popups Initialized", "single_popup_label": "Popup: #", "theme_id": "Theme ID: ", "label_method_call": "Method Call:", "label_method_args": "Method Arguments:", "label_popup_settings": "Settings", "label_triggers": "Triggers", "label_cookies": "Cookies", "label_delay": "Delay:", "label_conditions": "Conditions", "label_cookie": "Cookie:", "label_settings": "Settings:", "label_selector": "Selector:", "label_mobile_disabled": "Mobile Disabled:", "label_tablet_disabled": "Tablet Disabled:", "label_event": "Event: %s", "triggers": { "click_open": "Click Open", "auto_open": "Time Delay \/ Auto Open" }, "cookies": { "on_popup_close": "On Popup Close", "on_popup_open": "On Popup Open", "pum_sub_form_success": "Subscription Form: Successful", "pum_sub_form_already_subscribed": "Subscription Form: Already Subscribed", "manual": "Manual JavaScript" } };
+		var pum_sub_vars = { "ajaxurl": "https:\/\/web.archive.org\/web\/20230214165204\/http:\/\/gpads.recife.ifpe.edu.br\/wp-admin\/admin-ajax.php", "message_position": "top" };
+		var pum_popups = { "pum-418": { "disable_on_mobile": false, "disable_on_tablet": false, "custom_height_auto": false, "scrollable_content": false, "position_from_trigger": false, "position_fixed": false, "overlay_disabled": false, "stackable": false, "disable_reposition": false, "close_on_overlay_click": true, "close_on_esc_press": true, "close_on_f4_press": false, "disable_form_reopen": false, "disable_accessibility": false, "triggers": [{ "type": "click_open", "settings": { "extra_selectors": ".integracao-r-cloud-computing-modal" } }], "theme_id": "283", "size": "normal", "responsive_min_width": "0%", "responsive_max_width": "100%", "custom_width": "640px", "custom_height": "380px", "animation_type": "fade", "animation_speed": "350", "animation_origin": "center top", "location": "center", "position_top": "100", "position_bottom": "0", "position_left": "0", "position_right": "0", "zindex": "1999999999", "close_button_delay": "0", "cookies": [], "theme_slug": "283", "id": 418, "slug": "integracao-em-r-com-ferramentas-de-cloud-computing" }, "pum-422": { "disable_on_mobile": false, "disable_on_tablet": false, "custom_height_auto": false, "scrollable_content": false, "position_from_trigger": false, "position_fixed": false, "overlay_disabled": false, "stackable": false, "disable_reposition": false, "close_on_overlay_click": true, "close_on_esc_press": true, "close_on_f4_press": false, "disable_form_reopen": false, "disable_accessibility": false, "triggers": [{ "type": "click_open", "settings": { "extra_selectors": ".data-mining-modal" } }], "theme_id": "283", "size": "normal", "responsive_min_width": "0%", "responsive_max_width": "100%", "custom_width": "640px", "custom_height": "380px", "animation_type": "fade", "animation_speed": "350", "animation_origin": "center top", "location": "center", "position_top": "100", "position_bottom": "0", "position_left": "0", "position_right": "0", "zindex": "1999999999", "close_button_delay": "0", "cookies": [], "theme_slug": "283", "id": 422, "slug": "data-mining" }, "pum-425": { "disable_on_mobile": false, "disable_on_tablet": false, "custom_height_auto": false, "scrollable_content": false, "position_from_trigger": false, "position_fixed": false, "overlay_disabled": false, "stackable": false, "disable_reposition": false, "close_on_overlay_click": true, "close_on_esc_press": true, "close_on_f4_press": false, "disable_form_reopen": false, "disable_accessibility": false, "triggers": [{ "type": "click_open", "settings": { "extra_selectors": ".geolocaliza\u00e7\u00e3o-modal" } }], "theme_id": "283", "size": "normal", "responsive_min_width": "0%", "responsive_max_width": "100%", "custom_width": "640px", "custom_height": "380px", "animation_type": "fade", "animation_speed": "350", "animation_origin": "center top", "location": "center", "position_top": "100", "position_bottom": "0", "position_left": "0", "position_right": "0", "zindex": "1999999999", "close_button_delay": "0", "cookies": [], "theme_slug": "283", "id": 425, "slug": "geolocalizacao" }, "pum-280": { "disable_on_mobile": false, "disable_on_tablet": false, "custom_height_auto": false, "scrollable_content": false, "position_from_trigger": false, "position_fixed": false, "overlay_disabled": false, "stackable": false, "disable_reposition": false, "close_on_overlay_click": true, "close_on_esc_press": true, "close_on_f4_press": false, "disable_form_reopen": false, "disable_accessibility": false, "triggers": [{ "type": "click_open", "settings": { "cookie_name": "", "extra_selectors": ".projeto-echos-modal" } }], "theme_id": "283", "size": "large", "responsive_min_width": "0%", "responsive_max_width": "100%", "custom_width": "640px", "custom_height": "380px", "animation_type": "fade", "animation_speed": "350", "animation_origin": "center top", "location": "center", "position_top": "100", "position_bottom": "0", "position_left": "0", "position_right": "0", "zindex": "1999999999", "close_button_delay": "0", "cookies": [], "theme_slug": "283", "id": 280, "slug": "projeto-echos" }, "pum-305": { "disable_on_mobile": false, "disable_on_tablet": false, "custom_height_auto": false, "scrollable_content": false, "position_from_trigger": false, "position_fixed": false, "overlay_disabled": false, "stackable": false, "disable_reposition": false, "close_on_overlay_click": true, "close_on_esc_press": true, "close_on_f4_press": false, "disable_form_reopen": false, "disable_accessibility": false, "triggers": [{ "type": "click_open", "settings": { "cookie_name": "", "extra_selectors": ".tempo-real-embarcados-modal" } }], "theme_id": "283", "size": "normal", "responsive_min_width": "0%", "responsive_max_width": "100%", "custom_width": "640px", "custom_height": "380px", "animation_type": "fade", "animation_speed": "350", "animation_origin": "center top", "location": "center", "position_top": "100", "position_bottom": "0", "position_left": "0", "position_right": "0", "zindex": "1999999999", "close_button_delay": "0", "cookies": [], "theme_slug": "283", "id": 305, "slug": "sistemas-de-tempo-real-e-embarcados" }, "pum-340": { "disable_on_mobile": false, "disable_on_tablet": false, "custom_height_auto": false, "scrollable_content": false, "position_from_trigger": false, "position_fixed": false, "overlay_disabled": false, "stackable": false, "disable_reposition": false, "close_on_overlay_click": true, "close_on_esc_press": true, "close_on_f4_press": false, "disable_form_reopen": false, "disable_accessibility": false, "triggers": [{ "type": "click_open", "settings": { "cookie_name": "", "extra_selectors": ".blindmobi-modal" } }], "theme_id": "283", "size": "normal", "responsive_min_width": "0%", "responsive_max_width": "100%", "custom_width": "640px", "custom_height": "380px", "animation_type": "fade", "animation_speed": "350", "animation_origin": "center top", "location": "center", "position_top": "100", "position_bottom": "0", "position_left": "0", "position_right": "0", "zindex": "1999999999", "close_button_delay": "0", "cookies": [], "theme_slug": "283", "id": 340, "slug": "blindmobi" } };
+	</script>
+	<script src="GPADS_arquivos/site.min.js"></script>
+	<script src="GPADS_arquivos/wp-embed.min.js"></script>
+	<script>
+		/(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () { var t, e = location.hash.substring(1); /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus()) }, !1);
+	</script>
+	<script type="text/javascript" id="0572725f-142e-45d2-a081-ad27cd2256f8">
+		(function ($) {
+			var cols = parseInt('3');
+			var $scope = $('#uagb-post__carousel-0572725f-142e-45d2-a081-ad27cd2256f8').find('.is-carousel');
+
+			if (cols >= $scope.children().length) {
+				return;
+			}
+
+			var slider_options = {
+				'slidesToShow': cols,
+				'slidesToScroll': 1,
+				'autoplaySpeed': 2000,
+				'autoplay': Boolean('1'),
+				'infinite': Boolean('1'),
+				'pauseOnHover': Boolean('1'),
+				'speed': 500,
+				'arrows': Boolean('1'),
+				'dots': Boolean('1'),
+				'rtl': false,
+				'prevArrow': '<button type=\"button\" data-role=\"none\" class=\"slick-prev\" aria-label=\"Previous\" tabindex=\"0\" role=\"button\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 256 512\"><path d=\"M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z\"></path></svg><\/button>',
+				'nextArrow': '<button type=\"button\" data-role=\"none\" class=\"slick-next\" aria-label=\"Next\" tabindex=\"0\" role=\"button\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 256 512\"><path d=\"M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z\"></path></svg><\/button>',
+				'responsive': [
+					{
+						'breakpoint': 1024,
+						'settings': {
+							'slidesToShow': 2,
+							'slidesToScroll': 1,
+						}
+					},
+					{
+						'breakpoint': 767,
+						'settings': {
+							'slidesToShow': 1,
+							'slidesToScroll': 1,
+						}
+					}
+				]
+			};
+
+			$scope.imagesLoaded(function () {
+				$scope.slick(slider_options);
+			});
+
+			var enableEqualHeight = ('1')
+
+			if (enableEqualHeight) {
+				$scope.imagesLoaded(function () {
+					UAGBPostCarousel._setHeight($scope);
+				});
+
+				$scope.on('afterChange', function () {
+					UAGBPostCarousel._setHeight($scope);
+				});
+			}
+
+		})(jQuery);
+	</script>
+</body>
+</html>
